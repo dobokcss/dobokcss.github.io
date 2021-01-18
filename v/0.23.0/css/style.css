@@ -349,7 +349,7 @@ input:focus, select:focus, textarea:focus {
 .gr button, .gr input[type="radio"],
 .gr input[type="hidden"], .gr input[type="checkbox"],
 .gr input[type="button"] {
-    width: auto; float: none
+    /* width: auto; float: none */
 }
 
 .gr_1{ width: 6.78%} 

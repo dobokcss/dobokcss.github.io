@@ -78,22 +78,65 @@
 
     <div class="expand">
             <div class="row row_fluid">
-                <div class="gr gr_4 gr_md_6 gr_sm_12 pp_1_lg_bottom gr_field">
-                    <input type="text" placeholder="Name"/>
+                <div class="gr gr_8 gr_md_12">
+                    <div class="row row_fluid">
+
+                <div class="gr gr_4 gr_sm_12 mb_1 pp_1_lg_bottom gr_field">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" />
+                </div>
+                <div class="gr gr_4 gr_sm_12 mb_1 pp_1_lg_bottom gr_field">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" />
+                </div>
+                <div class="gr gr_8 gr_sm_12 mb_1 pp_1_lg_bottom gr_field">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" />
                 </div>
 
-                <div class="gr gr_4 gr_md_6 gr_sm_12 pp_1_lg_bottom gr_field">
-                    <input type="text" placeholder="Email"/>
+                <div class="expand">
+
+                <div class="gr gr_4 gr_sm_12 mb_1 pp_1_lg_bottom gr_field">
+                    <label for="country">Country</label>
+                    <select name="country">
+                        <option value="us">United States</option>
+                        <option value="br">Brazil</option>
+                        <option value="ch">China</option>
+                        <option value="fr">France</option>
+                        <option value="ge">Germany</option>
+                        <option value="ru">Russia</option>
+                    </select>
                 </div>
-                <div class="gr gr_4 gr_md_12 gr_field">
-                    <input type="text" placeholder="Work"/>
+                <div class="gr gr_4 gr_sm_12 my_1 mt_1_sm gr_field">
+                    <div class="expand">
+                        <label for="gender">Gender</label>
+                    </div>
+                    <input type="radio" name="gender" id="m" value="m" />
+                    <label for="m">Male:</label>
+
+                    <input type="radio" name="gender" id="f" value="f" />
+                    <label for="f">Female:</label>
                 </div>
 
-            </div>
-            <div class="row">
-                <div class="gr gr_12 tx_right">
-                    <button class="bt bt_prm">Send</button>
+
                 </div>
+
+
+
+
+
+
+
+
+
+                <div class="gr gr_12">
+                    <button class="bt bt_prm">Register</button>
+                </div>
+
+
+                    </div>
+                </div>
+
             </div>
     </div>
 
