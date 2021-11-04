@@ -6,20 +6,22 @@
             <title>Princing | DobokCSS</title>
 <link rel="stylesheet" href="https://dobokcss.github.io/v/0.24.0/css/reset.min.css" type="text/css" media="all" />        
 <link rel="stylesheet" href="https://dobokcss.github.io/v/0.24.0/css/style.css" type="text/css" media="all" />  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <style type="text/css" media="all">
         .mb_1 { margin-bottom: 10px }
         .mt_1 { margin-top: 10px }
         .pp_1 { padding: 10px }
+        .tb_striped td{ border-bottom: none 0}
     </style>
 <body>
     <div class="container mt_1">
         <div class="fold bd bd_b_stn">
         <div class="row">
-            <div class="gr gr_6">
-                <h1 class="tx_b">Princing Example</h1>
+            <div class="gr gr_6 gr_md_12">
+                <h1 class="tx_b tx_prm">Princing Example</h1>
             </div>
-            <div class="gr gr_6">
+            <div class="gr gr_6 gr_md_12">
                 <ul class="lt_x lk_prm fl_r">
                     <li><a href="#">Features</a> |</li>
                     <li><a href="#">Enterprise</a> |</li>
@@ -33,7 +35,7 @@
         <div class="fold">
             <div class="row">
                 <div class="gr gr_6">
-                    <h1 class="mb_1">Lorem</h1>
+                    <h1 class="mb_1 pb_1 tx_prm">Lorem</h1>
                     <p class="my_1">
                         lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         pellentesque dolor mauris, laoreet ac convallis non,
@@ -48,11 +50,11 @@
             <div class="row row_fluid">
                 <div class="gr gr_4 bd bd_prm rd gr_md_12 mb_1">
                     <div class="expand bd bd_b_stn my_1 pp_1">
-                        <h1>Free</h1>
+                        <h1 class="py_1 tx_prm">Free</h1>
                     </div>
 
                     <div class="expand pp_1">
-                    <div class="expand mb_1">
+                    <div class="expand my_1">
                         <strong class="tx_b tx_xlg">$0</strong>/mo
                     </div>
                     <div class="expand mb_1">
@@ -64,51 +66,25 @@
                         </ul>
                     </div>
                     <div class="expand mb_1">
-                        <a class="bt bt_lgh bd bd_prm expand" href="#">
+                        <a class="bt bd bd_prm bt_hv_prm expand" href="#">
                             Sing up for free
                         </a>
                     </div>
                     </div>
                 </div>
-
                 <div class="gr gr_4 bd bd_prm rd gr_md_12 mb_1">
                     <div class="expand bd bd_b_stn my_1 pp_1">
-                        <h1>Pro</h1>
+                        <h1 class="py_1 tx_prm">Enterprise</h1>
                     </div>
 
                     <div class="expand pp_1">
-                    <div class="expand mb_1">
-                        <strong class="tx_b tx_xlg">$17</strong>/mo
-                    </div>
-                    <div class="expand mb_1">
-                        <ul class="lt_y">
-                            <li>20 user included</li>
-                            <li>10 GB of storage</li>
-                            <li>Priority email support</li>
-                            <li>Help center access</li>
-                        </ul>
-                    </div>
-                    <div class="expand mb_1">
-                        <a class="bt bt_prm expand" href="#">
-                            Get Started
-                        </a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="gr gr_4 bd bd_prm rd gr_md_12 mb_1">
-                    <div class="expand bd bd_b_stn pp_1 bg_prm">
-                        <h1 class="pt_1">Enterprise</h1>
-                    </div>
-
-                    <div class="expand pp_1">
-                    <div class="expand mb_1">
+                    <div class="expand my_1">
                         <strong class="tx_b tx_xlg">$29</strong>/mo
                     </div>
                     <div class="expand mb_1">
                         <ul class="lt_y">
-                            <li>10 user included</li>
-                            <li>15 GB of storage</li>
+                            <li>30 user included</li>
+                            <li>20 GB of storage</li>
                             <li>Phone and email support</li>
                             <li>Help center access</li>
                         </ul>
@@ -120,6 +96,32 @@
                     </div>
                     </div>
                 </div>
+
+                <div class="gr gr_4 bd bd_prm rd gr_md_12 mb_1">
+                    <div class="expand bd bd_b_stn my_1 pp_1">
+                        <h1 class="py_1 tx_prm">Pro</h1>
+                    </div>
+
+                    <div class="expand pp_1">
+                    <div class="expand my_1">
+                        <strong class="tx_b tx_xlg">$17</strong>/mo
+                    </div>
+                    <div class="expand mb_1">
+                        <ul class="lt_y">
+                            <li>20 user included</li>
+                            <li>10 GB of storage</li>
+                            <li>Priority email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                    </div>
+                    <div class="expand mb_1">
+                        <a class="bt bd bd_prm bt_hv_prm expand" href="#">
+                            Get Started
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
 
 
 
@@ -141,39 +143,39 @@
             <tbody>
             <tr>
                 <td class="tx_b">Public</td>
-                <td>x</td>
-                <td>y</td>
-                <td>z</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
             </tr>
-            <tr>
+            <tr class="bd bd_b_prm">
                 <td class="tx_b">Private</td>
-                <td>x</td>
-                <td>y</td>
-                <td>z</td>
+                <td>&nbsp;</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
             </tr>
             <tr>
                 <td class="tx_b">Permissions</td>
-                <td>x</td>
-                <td>y</td>
-                <td>z</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
             </tr>
             <tr>
                 <td class="tx_b">Sharing</td>
-                <td>x</td>
-                <td>y</td>
-                <td>z</td>
+                <td>&nbsp;</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
             </tr>
             <tr>
                 <td class="tx_b">Unlimited members</td>
-                <td>x</td>
-                <td>y</td>
-                <td>z</td>
+                <td>&nbsp;</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
             </tr>
             <tr>
                 <td class="tx_b">Extra security</td>
-                <td>x</td>
-                <td>y</td>
-                <td>z</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><i class="fa fa-check"></i></td>
             </tr>
             </tbody>
             </table>
@@ -183,7 +185,10 @@
         <div class="fold">
             <div class="row">
                 <div class="gr gr_4 gr_md_12">
-                    &copy; 2021
+                    &copy; 2021 - 
+                    <script type="text/javascript">
+                        document.write(new Date().getFullYear());
+                </script>
                 </div>
                 <div class="gr gr_8 gr_md_12">
                     <div class="row">
