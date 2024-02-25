@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="pt-br">
     <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154417688-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154417688-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        gtag('config', 'UA-154417688-1');
-    </script>
+            gtag('config', 'UA-154417688-1');
+        </script>
 
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,113 +16,569 @@
 
         <link rel="stylesheet" href="../../v/0.28.0/css/reset.min.css" type="text/css" media="all" />
         <link rel="stylesheet" href="../../v/0.28.0/css/style.min.css" type="text/css" media="all" />
+        <style type="text/css" media="all">
+
+            input[id="mn_x_bt1"],
+            input[id="mn_x_bt2"],
+            input[id="mn_x_bt3"],
+            input[id="mn_x_bt4"],
+            input[id="mn_x_bt5"]
+            { display: none }
+
+            label[for="mn_x_bt1"],
+            label[for="mn_x_bt2"],
+            label[for="mn_x_bt3"],
+            label[for="mn_x_bt4"],
+            label[for="mn_x_bt5"]
+            {
+                width: 60px;
+                text-align: center;
+                display: none;
+                padding: 5px 15px;
+                font-size: 30px;
+                cursor: pointer
+            }
+
+            label[for="mn_x_bt1"]:hover,
+            label[for="mn_x_bt2"]:hover,
+            label[for="mn_x_bt3"]:hover,
+            label[for="mn_x_bt4"]:hover,
+            label[for="mn_x_bt5"]:hover
+            { background: rgba(50, 50, 50, 0.12) }
+
+            @media all and (max-width: 890px)
+            { 
+                label[for="mn_x_bt1"],
+                label[for="mn_x_bt2"],
+                label[for="mn_x_bt3"],
+                label[for="mn_x_bt4"],
+                label[for="mn_x_bt5"]
+                {
+                    display: block
+                }
+
+                #mn_x_bt1:checked ~ .mn_x > ul,
+                #mn_x_bt2:checked ~ .mn_x > ul,
+                #mn_x_bt3:checked ~ .mn_x > ul,
+                #mn_x_bt4:checked ~ .mn_x > ul,
+                #mn_x_bt5:checked ~ .mn_x > ul
+                {
+                    display: block
+                }
+            }
+
+        </style>
     </head>
-<body>
+    <body>
 
-<div class="expand bg_prm">
-<div class="container">
-<input type="checkbox" id="mn_x_bt" />
-<label for="mn_x_bt">&#9776;</label>
-<div class="mn_x mn_prm">
-    <ul>
-    <li><a href="../../">Dobok CSS</a></li>
-    <li>
-        <a href="#">Essential</a>
-        <ul>
-            <li><a href="./">Menu</a></li>
-            <li><a href="../grid">Grid</a></li>
-            <li><a href="../form">Form</a></li>
-            <li><a href="../table">Table</a></li>
-        </ul>
-      </li>
-    <!--li>
-        <a href="#">Components</a>
-        <ul>
-            <li><a href="#">Acordion</a></li>
-            <li><a href="#">Breadcrumb</a></li>
-            <li><a href="#">Buttons</a></li>
-            <li><a href="#">Card</a></li>
-            <li><a href="#">Modal</a></li>
-            <li><a href="#">Pagination</a></li>
-        </ul>
-      </li>
-    <li>
-        <a href="#">Content</a>
-        <ul>
-            <li><a href="#">Typogrephy</a></li>
-            <li><a href="#">Imagens</a></li>
-            <li><a href="#">Table</a></li>
-        </ul>
-      </li>
-    <li>
-        <a href="#">Utilities</a>
-        <ul>
-            <li><a href="#">Color</a></li>
-            <li><a href="#">Background</a></li>
-            <li><a href="#">Borders</a></li>
-            <li><a href="#">Float</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Text</a></li>
-        </ul>
-      </li -->
-      <li><a href="https://github.com/dobokcss/dobokcss">Github</a></li>
-      <li><a href="./downloads/">Downloads</a></li>
-</ul>
-</div>
-</div>
-</div>
-
-<div class="container">
-    
-    <div class="fold mt_1">
-        <div class="row">
-            <div class="gr gr_12">
-                <h1>Essential</h1>
+        <div class="expand bg_prm">
+            <div class="container">
+                <input type="checkbox" id="mn_x_bt" />
+                <label for="mn_x_bt">&#9776;</label>
+                <div class="mn_x mn_prm">
+                    <ul>
+                        <li><a href="../">Dobok CSS</a></li>
+                        <li>
+                            <a href="#">Essential</a>
+                            <ul>
+                                <li><a href="./menu">Menu</a></li>
+                                <li><a href="./grid">Grid</a></li>
+                                <li><a href="./form">Form</a></li>
+                                <li><a href="./table">Table</a></li>
+                            </ul>
+                        </li>
+                        <!--li>
+                        <a href="#">Components</a>
+                        <ul>
+                            <li><a href="#">Acordion</a></li>
+                            <li><a href="#">Breadcrumb</a></li>
+                            <li><a href="#">Buttons</a></li>
+                            <li><a href="#">Card</a></li>
+                            <li><a href="#">Modal</a></li>
+                            <li><a href="#">Pagination</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Content</a>
+                        <ul>
+                            <li><a href="#">Typogrephy</a></li>
+                            <li><a href="#">Imagens</a></li>
+                            <li><a href="#">Table</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Utilities</a>
+                        <ul>
+                            <li><a href="#">Color</a></li>
+                            <li><a href="#">Background</a></li>
+                            <li><a href="#">Borders</a></li>
+                            <li><a href="#">Float</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Text</a></li>
+                        </ul>
+                        </li -->
+                        <li><a href="https://github.com/dobokcss/dobokcss">Github</a></li>
+                        <li><a href="./downloads/">Downloads</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="fold">
-    <div class="row">
-        <div class="gr gr_10 gr_md_12">lorem ipsum dolor sit amet</div>
-        <div class="gr gr_2 gr_md_12">
-            <ul class="lt_y lk_prm lk_hv_scn">
-                <li><a href="./">Menu</a></li>
-                <li><a href="../grid">Grid</a></li>
-                <li><a href="../form">Form</a></li>
-                <li><a href="../table">Table</a></li>
-            </ul>
+
+        <div class="container">
+
+            <div class="fold mt_1">
+                <div class="row">
+                    <div class="gr gr_12">
+                        <h1 class="mb_2">Menu</h1>
+                    </div>
+                    <div class="gr gr_12">
+                        <ul class="lt_breadcrumb">
+                            <li><a href="../">Essencial</a></li>
+                            <li>Menu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="expand mb_100">
+                <div class="row">
+                    <div class="gr gr_12">
+                        <h1>Primary: _prm</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="gr gr_10">
+                        <!-- main -->
+                        <div class="fold">
+                            <div class="expand bg_prm">
+                                <input type="checkbox" id="mn_x_bt1" />
+                                <label for="mn_x_bt1">&#9776;</label>
+                                <div class="mn_x mn_prm">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li>
+                                            <a href="#">Products</a>
+                                            <ul>
+                                                <li><a href="#">Product 1</a></li>
+                                                <li><a href="#">Product 2</a></li>
+                                                <li> 
+                                                    <a href="#">Product 3</a> 
+                                                    <ul>
+                                                        <li><a href="#">Sub Product 1</a></li>
+                                                        <li><a href="#">Sub Product 2</a></li>
+                                                        <li><a href="#">Sub Product 3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="expand my_2">
+                                <script src="https://gist.github.com/estefanionsantos/38427db2a9ad69a69a34be1b09ce0879.js"></script>
+                            </div>
+                        </div>
+
+                        <div class="fold">
+                        <h1 class="mb_3">Secondary: _scn</h1>
+                            <div class="expand bg_scn">
+                                <input type="checkbox" id="mn_x_bt1" />
+                                <label for="mn_x_bt1">&#9776;</label>
+                                <div class="mn_x mn_scn">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li>
+                                            <a href="#">Products</a>
+                                            <ul>
+                                                <li><a href="#">Product 1</a></li>
+                                                <li><a href="#">Product 2</a></li>
+                                                <li> 
+                                                    <a href="#">Product 3</a> 
+                                                    <ul>
+                                                        <li><a href="#">Sub Product 1</a></li>
+                                                        <li><a href="#">Sub Product 2</a></li>
+                                                        <li><a href="#">Sub Product 3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="expand my_2">
+                                <div class="pp_1 bg_lgt">
+                                    &lt;div class="<b class="tx_b tx_scn">expand bg_scn </b>"&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" id="mn_x_bt" /&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="mn_x_bt">&#9776;&lt;/label&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<b class="tx_b tx_scn">mn_x mn_scn</b> "&gt; <br />
+                                    &lt;ul&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<b class="tx_b">...</b> <br />
+                                    &lt;/ul&gt; <br />
+                                    &lt;/div&gt; <br />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fold">
+                        <h1 class="mb_3">Standard: _stn</h1>
+                            <div class="expand bg_stn">
+                                <input type="checkbox" id="mn_x_bt2" />
+                                <label for="mn_x_bt2">&#9776;</label>
+                                <div class="mn_x mn_stn">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li>
+                                            <a href="#">Products</a>
+                                            <ul>
+                                                <li><a href="#">Product 1</a></li>
+                                                <li><a href="#">Product 2</a></li>
+                                                <li> 
+                                                    <a href="#">Product 3</a> 
+                                                    <ul>
+                                                        <li><a href="#">Sub Product 1</a></li>
+                                                        <li><a href="#">Sub Product 2</a></li>
+                                                        <li><a href="#">Sub Product 3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="expand my_2">
+                                <div class="pp_1 bg_lgt">
+                                    &lt;div class="<b class="tx_b tx_scn">expand bg_stn </b>"&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" id="mn_x_bt" /&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="mn_x_bt">&#9776;&lt;/label&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<b class="tx_b tx_scn">mn_x mn_stn</b> "&gt; <br />
+                                    &lt;ul&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<b class="tx_b">...</b> <br />
+                                    &lt;/ul&gt; <br />
+                                    &lt;/div&gt; <br />
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="fold">
+                        <h1 class="mb_3">Light: _lgt</h1>
+                            <div class="expand bg_lgt">
+                                <input type="checkbox" id="mn_x_bt1" />
+                                <label for="mn_x_bt1">&#9776;</label>
+                                <div class="mn_x mn_lgt">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li>
+                                            <a href="#">Products</a>
+                                            <ul>
+                                                <li><a href="#">Product 1</a></li>
+                                                <li><a href="#">Product 2</a></li>
+                                                <li> 
+                                                    <a href="#">Product 3</a> 
+                                                    <ul>
+                                                        <li><a href="#">Sub Product 1</a></li>
+                                                        <li><a href="#">Sub Product 2</a></li>
+                                                        <li><a href="#">Sub Product 3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="expand my_2">
+                                <div class="pp_1 bg_lgt">
+                                    &lt;div class="<b class="tx_b tx_scn">expand bg_lgt </b>"&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" id="mn_x_bt" /&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="mn_x_bt">&#9776;&lt;/label&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<b class="tx_b tx_scn">mn_x mn_lgt</b> "&gt; <br />
+                                    &lt;ul&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<b class="tx_b">...</b> <br />
+                                    &lt;/ul&gt; <br />
+                                    &lt;/div&gt; <br />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fold">
+                            <h1 class="mb_3">Sidebar Primary</h1>
+
+                            <div class="row">
+                                <div class="gr gr_4 gr_md_12">
+<ul class="mn_y mn_prm">
+    <li>
+    <input id="group-1-prm" type="checkbox" hidden />
+    <label for="group-1-prm">Lorem</label>
+    <ul>
+        <li><a href="#">1.lorem</a></li>
+        <li><a href="#">2.lorem</a></li>
+        <li><a href="#">3.lorem</a></li>
+    </ul>    
+    </li>
+    <li>
+    <input id="group-2-prm" type="checkbox" hidden />
+    <label for="group-2-prm">Ipsum</label>
+    <ul>
+        <li><a href="#">1. ipsum</a></li>
+        <li><a href="#">2. ipsum</a></li>
+        <li>
+        <input id="group-3-prm" type="checkbox" hidden />
+        <label for="group-3-prm">3. ipsum</label>
+        <ul>
+            <li><a href="#">3.1 ipsum</a></li>
+            <li><a href="#">3.2 ipsum</a></li>
+            <li><a href="#">3.3 ipsum</a></li>
+        </ul>    
+    </li>
+    </ul>    
+    </li>
+    <li><a href="#">Dolor</a></li>
+    <li><a href="#">Sit</a></li>
+</ul>
+
+                                </div>
+                                <div class="gr gr_8 gr_md_12">
+                                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    pellentesque dolor mauris, laoreet ac convallis non,
+                                    mattis eget tellus. praesent vitae lobortis orci.
+                                    interdum et malesuada fames ac ante ipsum primis
+                                </div>
+                            </div>
+
+                            <div class="expand mt_3">
+                                <script src="https://gist.github.com/estefanionsantos/b7308b8ea71c259e97edf1da145bc22d.js"></script>
+                            </div>
+
+                        </div>
+
+<div class="fold">
+                            <h1 class="mb_3">Sidebar Secondary</h1>
+
+                            <div class="row row_fluid">
+                                <div class="gr gr_4 gr_md_12">
+<ul class="mn_y mn_scn">
+    <li>
+    <input id="group-1-scn" type="checkbox" hidden />
+    <label for="group-1-scn">Lorem</label>
+    <ul>
+        <li><a href="#">1.lorem</a></li>
+        <li><a href="#">2.lorem</a></li>
+        <li><a href="#">3.lorem</a></li>
+    </ul>    
+    </li>
+    <li>
+    <input id="group-2-scn" type="checkbox" hidden />
+    <label for="group-2-scn">Ipsum</label>
+    <ul>
+        <li><a href="#">1. ipsum</a></li>
+        <li><a href="#">2. ipsum</a></li>
+        <li>
+        <input id="group-3-scn" type="checkbox" hidden />
+        <label for="group-3-scn">3. ipsum</label>
+        <ul>
+            <li><a href="#">3.1 ipsum</a></li>
+            <li><a href="#">3.2 ipsum</a></li>
+            <li><a href="#">3.3 ipsum</a></li>
+        </ul>    
+    </li>
+    </ul>    
+    </li>
+    <li><a href="#">Dolor</a></li>
+    <li><a href="#">Sit</a></li>
+</ul>
+
+                                </div>
+                                <div class="gr gr_8 gr_md_12">
+                                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    pellentesque dolor mauris, laoreet ac convallis non,
+                                    mattis eget tellus. praesent vitae lobortis orci.
+                                    interdum et malesuada fames ac ante ipsum primis
+                                </div>
+                            </div>
+
+                            <div class="expand mt_3">
+                                <div class="bg_lgt pp_2">
+                                    &lt;ul class="<b class="tx_b tx_scn">mn_y mn_scn</b>"&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp; ... <br />
+                                    &lt;/ul&gt; <br />
+                                </div>
+                            </div>
+
+                            </div>
+
+
+                            <div class="fold">
+                            <h1 class="mb_3">Sidebar Standard</h1>
+
+                            <div class="row">
+                                <div class="gr gr_4 gr_md_12">
+<ul class="mn_y mn_stn">
+    <li>
+    <input id="group-1-stn" type="checkbox" hidden />
+    <label for="group-1-stn">Lorem</label>
+    <ul>
+        <li><a href="#">1.lorem</a></li>
+        <li><a href="#">2.lorem</a></li>
+        <li><a href="#">3.lorem</a></li>
+    </ul>    
+    </li>
+    <li>
+    <input id="group-2-stn" type="checkbox" hidden />
+    <label for="group-2-stn">Ipsum</label>
+    <ul>
+        <li><a href="#">1. ipsum</a></li>
+        <li><a href="#">2. ipsum</a></li>
+        <li>
+        <input id="group-3-stn" type="checkbox" hidden />
+        <label for="group-3-stn">3. ipsum</label>
+        <ul>
+            <li><a href="#">3.1 ipsum</a></li>
+            <li><a href="#">3.2 ipsum</a></li>
+            <li><a href="#">3.3 ipsum</a></li>
+        </ul>    
+    </li>
+    </ul>    
+    </li>
+    <li><a href="#">Dolor</a></li>
+    <li><a href="#">Sit</a></li>
+</ul>
+
+                                </div>
+                                <div class="gr gr_8 gr_md_12">
+                                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    pellentesque dolor mauris, laoreet ac convallis non,
+                                    mattis eget tellus. praesent vitae lobortis orci.
+                                    interdum et malesuada fames ac ante ipsum primis
+                                </div>
+                            </div>
+
+                            <div class="expand mt_3">
+                                <div class="bg_lgt pp_2">
+                                    &lt;ul class="<b class="tx_b tx_scn">mn_y mn_stn</b>"&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp; ... <br />
+                                    &lt;/ul&gt; <br />
+                                </div>
+                            </div>
+
+
+                            </div>
+
+                            <div class="fold">
+                            <h1 class="mb_3">Sidebar Light</h1>
+
+                            <div class="row">
+                                <div class="gr gr_4 gr_md_12">
+<ul class="mn_y mn_lgt">
+    <li>
+    <input id="group-1-lgt" type="checkbox" hidden />
+    <label for="group-1-lgt">Lorem</label>
+    <ul>
+        <li><a href="#">1.lorem</a></li>
+        <li><a href="#">2.lorem</a></li>
+        <li><a href="#">3.lorem</a></li>
+    </ul>    
+    </li>
+    <li>
+    <input id="group-2-lgt" type="checkbox" hidden />
+    <label for="group-2-lgt">Ipsum</label>
+    <ul>
+        <li><a href="#">1. ipsum</a></li>
+        <li><a href="#">2. ipsum</a></li>
+        <li>
+        <input id="group-3-lgt" type="checkbox" hidden />
+        <label for="group-3-lgt">3. ipsum</label>
+        <ul>
+            <li><a href="#">3.1 ipsum</a></li>
+            <li><a href="#">3.2 ipsum</a></li>
+            <li><a href="#">3.3 ipsum</a></li>
+        </ul>    
+    </li>
+    </ul>    
+    </li>
+    <li><a href="#">Dolor</a></li>
+    <li><a href="#">Sit</a></li>
+</ul>
+
+                                </div>
+                                <div class="gr gr_8 gr_md_12">
+                                    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    pellentesque dolor mauris, laoreet ac convallis non,
+                                    mattis eget tellus. praesent vitae lobortis orci.
+                                    interdum et malesuada fames ac ante ipsum primis
+                                </div>
+                            </div>
+
+                            <div class="expand mt_3">
+                                <div class="bg_lgt pp_2">
+                                    &lt;ul class="<b class="tx_b tx_scn">mn_y mn_lgt</b>"&gt; <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp; ... <br />
+                                    &lt;/ul&gt; <br />
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                        <!-- main end -->
+                    </div>
+                    <div class="gr gr_2">
+                        <div class="expand mt_3">
+                            <ul class="lt_y lk_prm lk_hv_scn">
+                                <li><a href="./menu"><span class="tx_scn">Menu</span></a></li>
+                                <li><a href="./grid">Grid</a></li>
+                                <li><a href="./form">Form</a></li>
+                                <li><a href="./table">Table</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer class="fold">
+                <div class="expand">
+                </div>
+                <div class="expand">
+                    <ul class="lt_x fl_r">
+                        <li>
+                            &copy;
+                            2016 -
+                            <script type="text/javascript">
+                                var date = new Date();
+                                document.write(date.getFullYear());
+                            </script>
+                        </li>
+                        <li><a href="./" class="lk_prm">DobokCSS</a></li>
+                        <li>|</li>
+                        <li><a href="https://github.com/dobokcss/dobokcss" class="lk_prm">GitHub</a></li>
+                        <li>|</li>
+                        <li><a href="./downloads/" class="lk_prm">Downloads</a></li>
+                        <li>|</li>
+                        <li><a href="https://bit.ly/ens-github-io" class="lk_prm" title="@estefanionsantos">by: ens</a></li>
+                    </ul>
+                </div>
+            </footer>
+
         </div>
-    </div>
-    </div>
-
-
-<footer class="fold">
-    <div class="expand">
-    </div>
-    <div class="expand">
-        <ul class="lt_x fl_r">
-            <li>
-                &copy;
-                2016 -
-                <script type="text/javascript">
-                    var date = new Date();
-                    document.write(date.getFullYear());
-                </script>
-            </li>
-            <li><a href="./" class="lk_prm">DobokCSS</a></li>
-            <li>|</li>
-            <li><a href="https://github.com/dobokcss/dobokcss" class="lk_prm">GitHub</a></li>
-            <li>|</li>
-            <li><a href="./downloads/" class="lk_prm">Downloads</a></li>
-            <li>|</li>
-            <li><a href="https://bit.ly/ens-github-io" class="lk_prm" title="@estefanionsantos">by: ens</a></li>
-        </ul>
-    </div>
-</footer>
-
-</div>
 
 
 
-</body>
+    </body>
 </html>
+
+
