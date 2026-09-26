@@ -1,3 +1,5 @@
 *.vim
 *.bkp.*
+*.test.*
+dev/
 
