@@ -13,9 +13,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dobok CSS</title>
-
-        <link rel="stylesheet" href="v/0.28.0/css/reset.min.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="v/0.28.0/css/style.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="asset/css/style.css" type="text/css" media="all" />
     </head>
 <body>
 
@@ -76,8 +74,8 @@
 
 <div class="container">
 
-<div class="fold bd bd_b_lgt">
-   <div class="pg_header bd bd_b_stn">
+<div class="fold">
+   <div class="pg_header">
             <h1>Lorem ipsum dolor sit amet</h1>
         </div>
 
@@ -86,8 +84,10 @@
     </div>
 
 </div>
+
+
              
-<div class="fold bd bd_b_lgt">
+<div class="fold">
         
     <div class="gr gr_12">
         <h1>Button</h1>
@@ -98,17 +98,26 @@
                 <li><button class="bt bt_prm">Primary</button></li>
                 <li><button class="bt bt_scn">Secondary</button></li>
                 <li><button class="bt bt_lgt">Light</button></li>
-                <li><button class="bt bt_stn">Standard</button></li>
+                <li><button class="bt bt_ntl">Neutral</button></li>
             </ul>    
     </div>
 
     <div class="gr gr_12">
             <ul class="lt_x">
-            <li> <a class="bt bt_stn">anchor</a> </li>
-            <li> <div class="bt bt_stn">div</div> </li>
-            <li> <span class="bt bt_stn">span</span> </li>
-            <li> <button class="bt bt_stn">button</button> </li>
-            <li> <input type="submit" class="bt bt_stn expand_none" value="type submit"/> </li>
+                <li><button class="bt bt_scn bt_hv_prm">scn &gt; prm</button></li>
+                <li><button class="bt bt_prm bt_hv_scn">prm &gt; scn</button></li>
+                <li><button class="bt bt_lgt bt_hv_prm">lgt &gt; prm</button></li>
+                <li><button class="bt bt_ntl bt_hv_scn">ntl &gt; scn</button></li>
+            </ul>    
+    </div>
+
+    <div class="gr gr_12">
+            <ul class="lt_x">
+            <li> <a class="bt bt_ntl">anchor</a> </li>
+            <li> <div class="bt bt_ntl">div</div> </li>
+            <li> <span class="bt bt_ntl">span</span> </li>
+            <li> <button class="bt bt_ntl">button</button> </li>
+            <li> <input type="submit" class="bt bg_ntl expand_none" value="type submit"/> </li>
             </ul>
     </div>
 
@@ -119,7 +128,7 @@
 
 </div>
 
-<div class="fold bd bd_b_lgt">
+<div class="fold">
         
     <div class="gr gr_12">
         <h1>Button Outline</h1>
@@ -127,9 +136,9 @@
 
     <div class="gr gr_12">
             <ul class="lt_x">
-                <li><button class="bt bd bd_prm bt_hv_prm">Primary</button></li>
-                <li><button class="bt bd bd_scn bt_hv_scn">Secondary</button></li>
-                <li><button class="bt bd bd_stn bt_hv_stn">Standard</button></li>
+                <li><button class="bt bt_hv_prm bd bd_prm">Primary</button></li>
+                <li><button class="bt bt_hv_scn bd bd_scn">Secondary</button></li>
+                <li><button class="bt bt_hv_ntl bd bd_ntl">Neutral</button></li>
             </ul>    
     </div>
 
@@ -137,7 +146,7 @@
             <ul class="lt_x">
                 <li><button class="bt bt_hv_prm tx_prm">Primary</button></li>
                 <li><button class="bt bt_hv_scn tx_scn">Secondary</button></li>
-                <li><button class="bt bt_hv_stn">Standard</button></li>
+                <li><button class="bt bt_hv_ntl">Neutral</button></li>
             </ul>    
     </div>
 
@@ -147,7 +156,7 @@
 
 </div>
 
-<div class="fold bd bd_b_lgt">
+<div class="fold">
 
     <div class="gr gr_12">
         <h1>image</h1>
