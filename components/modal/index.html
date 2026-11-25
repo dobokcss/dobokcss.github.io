@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154417688-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-154417688-1');
+        </script>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Modal | Dobok CSS</title>
+
+        <link rel="stylesheet" href="../../assets/css/style.css" type="text/css" media="all" />
+    </head>
+    <body>
+
+        <header class="bg_prm">
+            <div class="container">
+                <input type="checkbox" id="mn_h_bt" />
+                <label for="mn_h_bt" class="tx_lgt">&#9776;</label>
+                <nav class="mn_h mn_prm">
+                    <ul>
+                        <li><a href="../../">Dobok CSS</a></li>
+                        <li>
+                            <a href="#">Essential +</a>
+                            <ul>
+                                <li><a href="../../essential/menu">Menu</a></li>
+                                <li><a href="../../essential/layout">layout</a></li>
+                                <li><a href="../../essential/forms">Form</a></li>
+                                <li><a href="../../essential/tables">Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Components +</a>
+                            <ul>
+                                <li><a href="../../components/alerts">Alerts</a></li>
+                                <li><a href="../../components/buttons">Buttons</a></li>
+                                <li><a href="../../components/modal">Modal</a></li>
+                                <li><a href="../../components/spinner">Spinner</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://github.com/dobokcss/dobokcss">Github</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="fold mt_1 mb_3">
+                <div class="row">
+                    <div class="gr gr_12">
+                        <h1 class="mb_3">Modal</h1>
+                    </div>
+                    <div class="gr gr_12">
+                        <ul class="lt_h lt_dropdown lt_dropdown_r fl_r">
+                            <li><a href="#">Components +</a>
+                                <ul>
+                                    <li><a href="../../components/alerts"><span class="tx_info">Alerts</span></a></li>
+                                    <li><a href="../../components/buttons">Buttons</a></li>
+                                    <li><a href="../../components/modal">Modal</a></li>
+                                    <li><a href="../../components/spinner">Spinner</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="fx_content">
+            <div class="container">
+                <p>
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                    pellentesque dolor mauris, laoreet ac convallis non, <br />
+                    mattis eget tellus. praesent vitae lobortis orci. <br />
+                    interdum et malesuada fames ac ante ipsum primis
+                </p>
+                <p>
+                    <button class="bt bt_prm" id="js_modal_open">Open demonstration modal</button>
+                </p>
+
+                <div class="w_100">
+                    <div class="modal_overlay ds_none">
+                        <div class="modal_dialog">
+                            <div class="row">
+                                <div class="gr gr_md_static bg_lgt mt_5 p_3 bd_card js_modal_example1">
+                                    <div class="w_100 mb_3 pb_2">
+                                        <button class="bt bt_lgt fl_r" id="js_modal_close">X</button>
+                                        <h1>Title Modal</h1>
+                                    </div>
+                                    <div class="w_100 py_2 bg_mid p_2">
+                                        <p>The modal body text goes here.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="fold">
+            <div class="container">
+                <ul class="lt_h fl_r lk_info">
+                    <li>
+                        &copy; 2016 -
+                        <script type="text/javascript">
+                            var date = new Date();
+                            document.write(date.getFullYear());
+                        </script>
+                    </li>
+                    <li><a href="../">DobokCSS</a></li>
+                    <li>|</li>
+                    <li><a href="https://github.com/dobokcss/core">GitHub</a></li>
+                    <li>|</li>
+                    <li><a href="https://estefanionsantos.github.io/" title="@estefanionsantos">by: ens</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+            const btnOpen = document.getElementById('js_modal_open');
+            const btnClose = document.getElementById('js_modal_close');
+            const modalOverlay = document.querySelector('.modal_overlay');
+
+            btnOpen.addEventListener('click', function() {
+                modalOverlay.classList.remove('ds_none');
+            });
+
+            btnClose.addEventListener('click', function() {
+                modalOverlay.classList.add('ds_none');
+            });
+
+            modalOverlay.addEventListener('click', function(event) {
+                if (!event.target.closest('.js_modal_example1')) {
+                    modalOverlay.classList.add('ds_none');
+                }
+            });
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    modalOverlay.classList.add('ds_none');
+                }
+            });
+
+        </script>
+
+    </body>
+</html>
+
+
+

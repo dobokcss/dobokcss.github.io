@@ -1,0 +1,81 @@
+
+.bg_gr .gr,
+.bg_gr .gr_flex,
+.bg_gr .gr_flex_2,
+.bg_gr .gr_flex_3,
+.bg_gr .gr_flex_4 { background: #ccc }
+
+.accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.accordion details {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.accordion details:hover {
+    border-color: #93c5fd;
+}
+
+.accordion details[open] {
+    border-color: #bfdbfe;
+    box-shadow: 0 1px 3px rgba(0,0,0,.05);
+}
+
+.accordion summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    cursor: pointer;
+    color: #1f2937;
+    font-size: 14px;
+    font-weight: 600;
+    list-style: none;
+    user-select: none;
+    transition: background .2s, color .2s;
+}
+
+.accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion summary::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #9ca3af;
+    border-bottom: 2px solid #9ca3af;
+    transform: rotate(45deg);
+    transition: transform .2s;
+    margin-right: 4px;
+    flex-shrink: 0;
+}
+
+.accordion details[open] summary::after {
+    transform: rotate(225deg);
+}
+
+.accordion summary:hover {
+    background: #f9fafb;
+    color: #2563eb;
+}
+
+.accordion-content {
+    padding: 16px;
+    border-top: 1px solid #f3f4f6;
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.accordion-content p {
+    margin: 0;
+}

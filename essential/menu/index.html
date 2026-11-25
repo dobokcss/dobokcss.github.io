@@ -14,21 +14,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Menu | Dobok CSS</title>
 
-        <link rel="stylesheet" href="../../asset/css/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../../assets/css/style.css" type="text/css" media="all" />
         <style type="text/css" media="all">
 
-            input[id="mn_x_bt1"],
-            input[id="mn_x_bt2"],
-            input[id="mn_x_bt3"],
-            input[id="mn_x_bt4"],
-            input[id="mn_x_bt5"]
+            input[id="mn_h_bt1"],
+            input[id="mn_h_bt2"],
+            input[id="mn_h_bt3"],
+            input[id="mn_h_bt4"],
+            input[id="mn_h_bt5"],
+            input[id="mn_h_bt6"]
             { display: none }
 
-            label[for="mn_x_bt1"],
-            label[for="mn_x_bt2"],
-            label[for="mn_x_bt3"],
-            label[for="mn_x_bt4"],
-            label[for="mn_x_bt5"]
+            label[for="mn_h_bt1"],
+            label[for="mn_h_bt2"],
+            label[for="mn_h_bt3"],
+            label[for="mn_h_bt4"],
+            label[for="mn_h_bt5"],
+            label[for="mn_h_bt6"]
             {
                 width: 60px;
                 text-align: center;
@@ -38,43 +40,57 @@
                 cursor: pointer
             }
 
-            label[for="mn_x_bt1"]:hover,
-            label[for="mn_x_bt2"]:hover,
-            label[for="mn_x_bt3"]:hover,
-            label[for="mn_x_bt4"]:hover,
-            label[for="mn_x_bt5"]:hover
+            label[for="mn_h_bt1"]:hover,
+            label[for="mn_h_bt2"]:hover,
+            label[for="mn_h_bt3"]:hover,
+            label[for="mn_h_bt4"]:hover,
+            label[for="mn_h_bt5"]:hover,
+            label[for="mn_h_bt6"]:hover
             { background: rgba(50, 50, 50, 0.12) }
 
-            @media all and (max-width: 890px)
-            { 
-                label[for="mn_x_bt1"],
-                label[for="mn_x_bt2"],
-                label[for="mn_x_bt3"],
-                label[for="mn_x_bt4"],
-                label[for="mn_x_bt5"]
+                label[for="mn_h_bt1"],
+                label[for="mn_h_bt2"],
+                label[for="mn_h_bt3"],
+                label[for="mn_h_bt4"],
+                label[for="mn_h_bt5"],
+                label[for="mn_h_bt6"]
+                {
+                    display: none
+                }
+
+                #mn_h_bt1:checked ~ .mn_h,
+                #mn_h_bt2:checked ~ .mn_h,
+                #mn_h_bt3:checked ~ .mn_h,
+                #mn_h_bt4:checked ~ .mn_h,
+                #mn_h_bt5:checked ~ .mn_h,
+                #mn_h_bt6:checked ~ .mn_h
                 {
                     display: block
                 }
 
-                #mn_x_bt1:checked ~ .mn_x > ul,
-                #mn_x_bt2:checked ~ .mn_x > ul,
-                #mn_x_bt3:checked ~ .mn_x > ul,
-                #mn_x_bt4:checked ~ .mn_x > ul,
-                #mn_x_bt5:checked ~ .mn_x > ul
-                {
-                    display: block
-                }
-            }
+@media (max-width: 768px) {
+
+    label[for="mn_h_bt1"],
+    label[for="mn_h_bt2"],
+    label[for="mn_h_bt3"],
+    label[for="mn_h_bt4"],
+    label[for="mn_h_bt5"],
+    label[for="mn_h_bt6"]{
+        display: block;
+    }
+
+}
+
 
         </style>
     </head>
     <body>
 
-        <div class="expand bg_prm">
+        <header class="bg_prm">
             <div class="container">
-                <input type="checkbox" id="mn_x_bt" />
-                <label for="mn_x_bt">&#9776;</label>
-                <div class="mn_x mn_prm">
+                <input type="checkbox" id="mn_h_bt" />
+                <label for="mn_h_bt" class="tx_lgt">&#9776;</label>
+                <nav class="mn_h mn_prm">
                     <ul>
                         <li><a href="../">Dobok CSS</a></li>
                         <li>
@@ -119,9 +135,9 @@
                         <li><a href="https://github.com/dobokcss/dobokcss">Github</a></li>
                         <li><a href="../../downloads/">Downloads</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
-        </div>
+        </header>
 
         <div class="container">
 
@@ -130,183 +146,320 @@
                     <div class="gr gr_12">
                         <h1 class="mb_3">Menu</h1>
                     </div>
+
                     <div class="gr gr_12">
-                        <ul class="lt_breadcrumb">
-                            <li><a href="../">Essential</a></li>
-                            <li>Menu</li>
+                        <ul class="lt_h lt_dropdown lt_dropdown_r fl_r">
+                            <li><a href="#">Essential +</a>
+                                <ul>
+                                    <li><a href="../menu"><span class="tx_info">Menu</span></a></li>
+                                    <li><a href="../layout">Layout</a></li>
+                                    <li><a href="../forms">Form</a></li>
+                                    <li><a href="../tables">Table</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="expand mb_100">
+            <div class="w_100 mb_2">
                 <div class="row">
                     <div class="gr gr_12">
                         <h1>Primary: _prm</h1>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="gr gr_10">
+                    <div class="gr gr_12">
                         <!-- main -->
                         <div class="fold">
-                            <div class="expand bg_prm">
-                                <input type="checkbox" id="mn_x_bt1" />
-                                <label for="mn_x_bt1">&#9776;</label>
-                                <div class="mn_x mn_prm">
-                                    <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li>
-                                            <a href="#">Products</a>
-                                            <ul>
-                                                <li><a href="#">Product 1</a></li>
-                                                <li><a href="#">Product 2</a></li>
-                                                <li> 
-                                                    <a href="#">Product 3</a> 
-                                                    <ul>
-                                                        <li><a href="#">Sub Product 1</a></li>
-                                                        <li><a href="#">Sub Product 2</a></li>
-                                                        <li><a href="#">Sub Product 3</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Features</a></li>
-                                        <li><a href="#">Pricing</a></li>
-                                    </ul>
+                            <div class="bg_prm">
+                                <div class="container">
+                                    <input type="checkbox" id="mn_h_bt1" />
+                                    <label for="mn_h_bt1" class="tx_lgt">&#9776;</label>
+                                    <nav class="mn_h mn_prm">
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li>
+                                                <a href="#">Dropdown 1 +</a>
+                                                <ul>
+                                                    <li><a href="#">Lorem</a></li>
+                                                    <li><a href="#">Ipsum</a></li>
+                                                    <li> 
+                                                        <a href="#">Dolor +</a> 
+                                                        <ul>
+                                                            <li><a href="#">Sub Sit 1</a></li>
+                                                            <li><a href="#">Sub Sit 2</a></li>
+                                                            <li><a href="#">Sub Sit 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Lorem</a></li>
+                                            <li><a href="#">Ipsum</a></li>
+                                            <li class="mn_dropdown_r">
+                                                <a href="#">Dropdown 2 +</a>
+                                                <ul>
+                                                    <li><a href="#">Aliquam</a></li>
+                                                    <li><a href="#">Tincidunt</a></li>
+                                                    <li> 
+                                                        <a href="#">Ligula +</a> 
+                                                        <ul>
+                                                            <li><a href="#">Sub Nulla 1</a></li>
+                                                            <li><a href="#">Sub Nulla 2</a></li>
+                                                            <li><a href="#">Sub Nulla 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
-
-                            <div class="expand my_2">
-                                <script src="https://gist.github.com/estefanionsantos/38427db2a9ad69a69a34be1b09ce0879.js"></script>
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/3c5c460656624c7c90b1d54ff4dbbd0e.js"></script>
+                                    </div>
+                                </details>
+                            </div>
                             </div>
                         </div>
 
                         <div class="fold">
                         <h1 class="mb_3">Secondary: _scn</h1>
-                            <div class="expand bg_scn">
-                                <input type="checkbox" id="mn_x_bt2" />
-                                <label for="mn_x_bt2">&#9776;</label>
-                                <div class="mn_x mn_scn">
-                                    <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li>
-                                            <a href="#">Products</a>
-                                            <ul>
-                                                <li><a href="#">Product 1</a></li>
-                                                <li><a href="#">Product 2</a></li>
-                                                <li> 
-                                                    <a href="#">Product 3</a> 
-                                                    <ul>
-                                                        <li><a href="#">Sub Product 1</a></li>
-                                                        <li><a href="#">Sub Product 2</a></li>
-                                                        <li><a href="#">Sub Product 3</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Features</a></li>
-                                        <li><a href="#">Pricing</a></li>
-                                    </ul>
+                            <div class="bg_scn">
+                                <div class="container">
+                                    <input type="checkbox" id="mn_h_bt2" />
+                                    <label for="mn_h_bt2" class="tx_lgt">&#9776;</label>
+                                    <nav class="mn_h mn_scn">
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li>
+                                                <a href="#">Dropdown 1 +</a>
+                                                <ul>
+                                                    <li><a href="#">Lorem</a></li>
+                                                    <li><a href="#">Ipsum</a></li>
+                                                    <li> 
+                                                        <a href="#">Dolor +</a> 
+                                                        <ul>
+                                                            <li><a href="#">Sub Sit 1</a></li>
+                                                            <li><a href="#">Sub Sit 2</a></li>
+                                                            <li><a href="#">Sub Sit 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Lorem</a></li>
+                                            <li><a href="#">Ipsum</a></li>
+                                            <li class="mn_dropdown_r">
+                                                <a href="#">Dropdown 2 +</a>
+                                                <ul>
+                                                    <li><a href="#">Aliquam</a></li>
+                                                    <li><a href="#">Tincidunt</a></li>
+                                                    <li> 
+                                                        <a href="#">Ligula +</a> 
+                                                        <ul>
+                                                            <li><a href="#">Sub Nulla 1</a></li>
+                                                            <li><a href="#">Sub Nulla 2</a></li>
+                                                            <li><a href="#">Sub Nulla 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
-
-                            <div class="expand my_2">
-                                <div class="pp_1 bg_lgt">
-                                    &lt;div class="<b class="tx_b tx_scn">expand bg_scn </b>"&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" id="mn_x_bt" /&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="mn_x_bt">&#9776;&lt;/label&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<b class="tx_b tx_scn">mn_x mn_scn</b> "&gt; <br />
-                                    &lt;ul&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;<b class="tx_b">...</b> <br />
-                                    &lt;/ul&gt; <br />
-                                    &lt;/div&gt; <br />
-                                </div>
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/86a46a648457256d5a3c9a07f6098720.js"></script>
+                                    </div>
+                                </details>
+                            </div>
                             </div>
                         </div>
 
                         <div class="fold">
-                        <h1 class="mb_3">Standard: _stn</h1>
-                            <div class="expand bg_stn">
-                                <input type="checkbox" id="mn_x_bt3" />
-                                <label for="mn_x_bt3">&#9776;</label>
-                                <div class="mn_x mn_stn">
-                                    <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li>
-                                            <a href="#">Products</a>
-                                            <ul>
-                                                <li><a href="#">Product 1</a></li>
-                                                <li><a href="#">Product 2</a></li>
-                                                <li> 
-                                                    <a href="#">Product 3</a> 
-                                                    <ul>
-                                                        <li><a href="#">Sub Product 1</a></li>
-                                                        <li><a href="#">Sub Product 2</a></li>
-                                                        <li><a href="#">Sub Product 3</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Features</a></li>
-                                        <li><a href="#">Pricing</a></li>
-                                    </ul>
+                        <h1 class="mb_3">Neutral: _ntl</h1>
+                            <div class="bg_ntl">
+                                <div class="container">
+                                    <input type="checkbox" id="mn_h_bt4" />
+                                    <label for="mn_h_bt4" class="tx_drk">&#9776;</label>
+                                    <nav class="mn_h mn_ntl">
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li>
+                                                <a href="#">Dropdown 1 +</a>
+                                                <ul>
+                                                    <li><a href="#">Lorem</a></li>
+                                                    <li><a href="#">Ipsum</a></li>
+                                                    <li> 
+                                                        <a href="#">Dolor +</a> 
+                                                        <ul>
+                                                            <li><a href="#">Sub Sit 1</a></li>
+                                                            <li><a href="#">Sub Sit 2</a></li>
+                                                            <li><a href="#">Sub Sit 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Lorem</a></li>
+                                            <li><a href="#">Ipsum</a></li>
+                                            <li class="mn_dropdown_r">
+                                                <a href="#">Dropdown 2 +</a>
+                                                <ul>
+                                                    <li><a href="#">Aliquam</a></li>
+                                                    <li><a href="#">Tincidunt</a></li>
+                                                    <li> 
+                                                        <a href="#">Ligula +</a> 
+                                                        <ul>
+                                                            <li><a href="#">Sub Nulla 1</a></li>
+                                                            <li><a href="#">Sub Nulla 2</a></li>
+                                                            <li><a href="#">Sub Nulla 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
 
-                            <div class="expand my_2">
-                                <div class="pp_1 bg_lgt">
-                                    &lt;div class="<b class="tx_b tx_scn">expand bg_stn </b>"&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" id="mn_x_bt" /&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="mn_x_bt">&#9776;&lt;/label&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<b class="tx_b tx_scn">mn_x mn_stn</b> "&gt; <br />
-                                    &lt;ul&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;<b class="tx_b">...</b> <br />
-                                    &lt;/ul&gt; <br />
-                                    &lt;/div&gt; <br />
-                                </div>
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/be6d942ae7307cb71f89c3a3dd0fd390.js"></script>
+                                    </div>
+                                </details>
+                            </div>
                             </div>
                         </div>
 
+
+                        <div class="fold">
+                        <h1 class="mb_3">Dark: _drk</h1>
+                            <div class="bg_drk">
+                                <div class="container">
+                                    <input type="checkbox" id="mn_h_bt5" />
+                                    <label for="mn_h_bt5" class="tx_drk">&#9776;</label>
+                                    <nav class="mn_h mn_drk">
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li>
+                                                <a href="#">Dropdown 1 +</a>
+                                                <ul>
+                                                    <li><a href="#">Lorem</a></li>
+                                                    <li><a href="#">Ipsum</a></li>
+                                                    <li> 
+                                                        <a href="#">Dolor +</a> 
+                                                        <ul>
+                                                            <li><a href="#">Sub Sit 1</a></li>
+                                                            <li><a href="#">Sub Sit 2</a></li>
+                                                            <li><a href="#">Sub Sit 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Lorem</a></li>
+                                            <li><a href="#">Ipsum</a></li>
+                                            <li class="mn_dropdown_r">
+                                                <a href="#">Dropdown 2 +</a>
+                                                <ul>
+                                                    <li><a href="#">Aliquam</a></li>
+                                                    <li><a href="#">Tincidunt</a></li>
+                                                    <li> 
+                                                        <a href="#">Ligula +</a> 
+                                                        <ul>
+                                                            <li><a href="#">Sub Nulla 1</a></li>
+                                                            <li><a href="#">Sub Nulla 2</a></li>
+                                                            <li><a href="#">Sub Nulla 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/fef1f5f66cf39a17a4d09f9cef69cb32.js"></script>
+                                    </div>
+                                </details>
+                            </div>
+                            </div>
+                        </div>
 
                         <div class="fold">
                         <h1 class="mb_3">Light: _lgt</h1>
-                            <div class="expand bg_lgt">
-                                <input type="checkbox" id="mn_x_bt4" />
-                                <label for="mn_x_bt4">&#9776;</label>
-                                <div class="mn_x mn_lgt">
-                                    <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li>
-                                            <a href="#">Products</a>
-                                            <ul>
-                                                <li><a href="#">Product 1</a></li>
-                                                <li><a href="#">Product 2</a></li>
-                                                <li> 
-                                                    <a href="#">Product 3</a> 
-                                                    <ul>
-                                                        <li><a href="#">Sub Product 1</a></li>
-                                                        <li><a href="#">Sub Product 2</a></li>
-                                                        <li><a href="#">Sub Product 3</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Features</a></li>
-                                        <li><a href="#">Pricing</a></li>
-                                    </ul>
+                            <div class="bg_lgt">
+                                <div class="container">
+                                    <input type="checkbox" id="mn_h_bt6" />
+                                    <label for="mn_h_bt6" class="tx_drk">&#9776;</label>
+                                    <nav class="mn_h mn_lgt">
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li>
+                                                <a href="#">Dropdown 1 +</a>
+                                                <ul>
+                                                    <li><a href="#">Lorem</a></li>
+                                                    <li><a href="#">Ipsum</a></li>
+                                                    <li> 
+                                                        <a href="#">Dolor +</a> 
+                                                        <ul>
+                                                            <li><a href="#">Sub Sit 1</a></li>
+                                                            <li><a href="#">Sub Sit 2</a></li>
+                                                            <li><a href="#">Sub Sit 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Lorem</a></li>
+                                            <li><a href="#">Ipsum</a></li>
+                                            <li class="mn_dropdown_r">
+                                                <a href="#">Dropdown 2 +</a>
+                                                <ul>
+                                                    <li><a href="#">Aliquam</a></li>
+                                                    <li><a href="#">Tincidunt</a></li>
+                                                    <li> 
+                                                        <a href="#">Ligula +</a> 
+                                                        <ul>
+                                                            <li><a href="#">Sub Nulla 1</a></li>
+                                                            <li><a href="#">Sub Nulla 2</a></li>
+                                                            <li><a href="#">Sub Nulla 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
 
-                            <div class="expand my_2">
-                                <div class="pp_1 bg_lgt">
-                                    &lt;div class="<b class="tx_b tx_scn">expand bg_lgt </b>"&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" id="mn_x_bt" /&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="mn_x_bt">&#9776;&lt;/label&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<b class="tx_b tx_scn">mn_x mn_lgt</b> "&gt; <br />
-                                    &lt;ul&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;<b class="tx_b">...</b> <br />
-                                    &lt;/ul&gt; <br />
-                                    &lt;/div&gt; <br />
-                                </div>
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/a1b0b6ab32aaaeb9ae81bbfc546e8e70.js"></script>
+                                    </div>
+                                </details>
+                            </div>
                             </div>
                         </div>
 
@@ -314,40 +467,40 @@
                             <h1 class="mb_3">Sidebar Primary</h1>
 
                             <div class="row">
-                                <div class="gr gr_4 gr_md_12">
-<ul class="mn_y mn_prm">
-    <li>
-    <input id="group-1-prm" type="checkbox" hidden />
-    <label for="group-1-prm">Lorem</label>
-    <ul>
-        <li><a href="#">1.lorem</a></li>
-        <li><a href="#">2.lorem</a></li>
-        <li><a href="#">3.lorem</a></li>
-    </ul>    
-    </li>
-    <li>
-    <input id="group-2-prm" type="checkbox" hidden />
-    <label for="group-2-prm">Ipsum</label>
-    <ul>
-        <li><a href="#">1. ipsum</a></li>
-        <li><a href="#">2. ipsum</a></li>
-        <li>
-        <input id="group-3-prm" type="checkbox" hidden />
-        <label for="group-3-prm">3. ipsum</label>
-        <ul>
-            <li><a href="#">3.1 ipsum</a></li>
-            <li><a href="#">3.2 ipsum</a></li>
-            <li><a href="#">3.3 ipsum</a></li>
-        </ul>    
-    </li>
-    </ul>    
-    </li>
-    <li><a href="#">Dolor</a></li>
-    <li><a href="#">Sit</a></li>
-</ul>
+                                <div class="gr gr_lg_4 gr_12">
+                                    <ul class="mn_v mn_prm">
+                                        <li>
+                                            <input id="group-1-prm" type="checkbox" hidden />
+                                            <label for="group-1-prm">Lorem</label>
+                                            <ul>
+                                                <li><a href="#">1.lorem</a></li>
+                                                <li><a href="#">2.lorem</a></li>
+                                                <li><a href="#">3.lorem</a></li>
+                                            </ul>    
+                                        </li>
+                                        <li>
+                                            <input id="group-2-prm" type="checkbox" hidden />
+                                            <label for="group-2-prm">Ipsum</label>
+                                            <ul>
+                                                <li><a href="#">1. ipsum</a></li>
+                                                <li><a href="#">2. ipsum</a></li>
+                                                <li>
+                                                    <input id="group-3-prm" type="checkbox" hidden />
+                                                    <label for="group-3-prm">3. ipsum</label>
+                                                    <ul>
+                                                        <li><a href="#">3.1 ipsum</a></li>
+                                                        <li><a href="#">3.2 ipsum</a></li>
+                                                        <li><a href="#">3.3 ipsum</a></li>
+                                                    </ul>    
+                                                </li>
+                                            </ul>    
+                                        </li>
+                                        <li><a href="#">Dolor</a></li>
+                                        <li><a href="#">Sit</a></li>
+                                    </ul>
 
                                 </div>
-                                <div class="gr gr_8 gr_md_12">
+                                <div class="gr gr_lg_8 gr_12">
                                     lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     pellentesque dolor mauris, laoreet ac convallis non,
                                     mattis eget tellus. praesent vitae lobortis orci.
@@ -355,8 +508,15 @@
                                 </div>
                             </div>
 
-                            <div class="expand mt_3">
-                                <script src="https://gist.github.com/estefanionsantos/b7308b8ea71c259e97edf1da145bc22d.js"></script>
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/b7308b8ea71c259e97edf1da145bc22d.js"></script>
+                                    </div>
+                                </details>
+                            </div>
                             </div>
 
                         </div>
@@ -365,40 +525,40 @@
                             <h1 class="mb_3">Sidebar Secondary</h1>
 
                             <div class="row row_fluid">
-                                <div class="gr gr_4 gr_md_12">
-<ul class="mn_y mn_scn">
-    <li>
-    <input id="group-1-scn" type="checkbox" hidden />
-    <label for="group-1-scn">Lorem</label>
-    <ul>
-        <li><a href="#">1.lorem</a></li>
-        <li><a href="#">2.lorem</a></li>
-        <li><a href="#">3.lorem</a></li>
-    </ul>    
-    </li>
-    <li>
-    <input id="group-2-scn" type="checkbox" hidden />
-    <label for="group-2-scn">Ipsum</label>
-    <ul>
-        <li><a href="#">1. ipsum</a></li>
-        <li><a href="#">2. ipsum</a></li>
-        <li>
-        <input id="group-3-scn" type="checkbox" hidden />
-        <label for="group-3-scn">3. ipsum</label>
-        <ul>
-            <li><a href="#">3.1 ipsum</a></li>
-            <li><a href="#">3.2 ipsum</a></li>
-            <li><a href="#">3.3 ipsum</a></li>
-        </ul>    
-    </li>
-    </ul>    
-    </li>
-    <li><a href="#">Dolor</a></li>
-    <li><a href="#">Sit</a></li>
-</ul>
+                                <div class="gr gr_lg_4 gr_12">
+                                    <ul class="mn_v mn_scn">
+                                        <li>
+                                            <input id="group-1-scn" type="checkbox" hidden />
+                                            <label for="group-1-scn">Lorem</label>
+                                            <ul>
+                                                <li><a href="#">1.lorem</a></li>
+                                                <li><a href="#">2.lorem</a></li>
+                                                <li><a href="#">3.lorem</a></li>
+                                            </ul>    
+                                        </li>
+                                        <li>
+                                            <input id="group-2-scn" type="checkbox" hidden />
+                                            <label for="group-2-scn">Ipsum</label>
+                                            <ul>
+                                                <li><a href="#">1. ipsum</a></li>
+                                                <li><a href="#">2. ipsum</a></li>
+                                                <li>
+                                                    <input id="group-3-scn" type="checkbox" hidden />
+                                                    <label for="group-3-scn">3. ipsum</label>
+                                                    <ul>
+                                                        <li><a href="#">3.1 ipsum</a></li>
+                                                        <li><a href="#">3.2 ipsum</a></li>
+                                                        <li><a href="#">3.3 ipsum</a></li>
+                                                    </ul>    
+                                                </li>
+                                            </ul>    
+                                        </li>
+                                        <li><a href="#">Dolor</a></li>
+                                        <li><a href="#">Sit</a></li>
+                                    </ul>
 
                                 </div>
-                                <div class="gr gr_8 gr_md_12">
+                                <div class="gr gr_lg_8 gr_12">
                                     lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     pellentesque dolor mauris, laoreet ac convallis non,
                                     mattis eget tellus. praesent vitae lobortis orci.
@@ -406,26 +566,88 @@
                                 </div>
                             </div>
 
-                            <div class="expand mt_3">
-                                <div class="bg_lgt pp_2">
-                                    &lt;ul class="<b class="tx_b tx_scn">mn_y mn_scn</b>"&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp; ... <br />
-                                    &lt;/ul&gt; <br />
-                                </div>
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/d999fe79436e6a2052dc56748e0673bb.js"></script>
+                                    </div>
+                                </details>
+                            </div>
                             </div>
 
                             </div>
 
 
                             <div class="fold">
-                            <h1 class="mb_3">Sidebar Standard</h1>
+                                <h1 class="mb_3">Sidebar Standard</h1>
+
+                                <div class="row">
+                                    <div class="gr gr_lg_4 gr_12">
+                                        <ul class="mn_v mn_ntl">
+                                            <li>
+                                                <input id="group-1-stn" type="checkbox" hidden />
+                                                <label for="group-1-stn">Lorem</label>
+                                                <ul>
+                                                    <li><a href="#">1.lorem</a></li>
+                                                    <li><a href="#">2.lorem</a></li>
+                                                    <li><a href="#">3.lorem</a></li>
+                                                </ul>    
+                                            </li>
+                                            <li>
+                                                <input id="group-2-stn" type="checkbox" hidden />
+                                                <label for="group-2-stn">Ipsum</label>
+                                                <ul>
+                                                    <li><a href="#">1. ipsum</a></li>
+                                                    <li><a href="#">2. ipsum</a></li>
+                                                    <li>
+                                                        <input id="group-3-stn" type="checkbox" hidden />
+                                                        <label for="group-3-stn">3. ipsum</label>
+                                                        <ul>
+                                                            <li><a href="#">3.1 ipsum</a></li>
+                                                            <li><a href="#">3.2 ipsum</a></li>
+                                                            <li><a href="#">3.3 ipsum</a></li>
+                                                        </ul>    
+                                                    </li>
+                                                </ul>    
+                                            </li>
+                                            <li><a href="#">Dolor</a></li>
+                                            <li><a href="#">Sit</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="gr gr_lg_8 gr_12">
+                                        lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        pellentesque dolor mauris, laoreet ac convallis non,
+                                        mattis eget tellus. praesent vitae lobortis orci.
+                                        interdum et malesuada fames ac ante ipsum primis
+                                    </div>
+                                </div>
+
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/b39adf409373aa99b1b8513bd72e3e80.js"></script>
+                                    </div>
+                                </details>
+                            </div>
+                            </div>
+
+
+                            </div>
+
+                            <div class="fold">
+                            <h1 class="mb_3">Sidebar Dark</h1>
 
                             <div class="row">
-                                <div class="gr gr_4 gr_md_12">
-<ul class="mn_y mn_stn">
+                                <div class="gr gr_lg_4 gr_12">
+<ul class="mn_v mn_drk">
     <li>
-    <input id="group-1-stn" type="checkbox" hidden />
-    <label for="group-1-stn">Lorem</label>
+    <input id="group-1-drk" type="checkbox" hidden />
+    <label for="group-1-drk">Lorem</label>
     <ul>
         <li><a href="#">1.lorem</a></li>
         <li><a href="#">2.lorem</a></li>
@@ -433,14 +655,14 @@
     </ul>    
     </li>
     <li>
-    <input id="group-2-stn" type="checkbox" hidden />
-    <label for="group-2-stn">Ipsum</label>
+    <input id="group-2-drk" type="checkbox" hidden />
+    <label for="group-2-drk">Ipsum</label>
     <ul>
         <li><a href="#">1. ipsum</a></li>
         <li><a href="#">2. ipsum</a></li>
         <li>
-        <input id="group-3-stn" type="checkbox" hidden />
-        <label for="group-3-stn">3. ipsum</label>
+        <input id="group-3-drk" type="checkbox" hidden />
+        <label for="group-3-drk">3. ipsum</label>
         <ul>
             <li><a href="#">3.1 ipsum</a></li>
             <li><a href="#">3.2 ipsum</a></li>
@@ -454,7 +676,7 @@
 </ul>
 
                                 </div>
-                                <div class="gr gr_8 gr_md_12">
+                                <div class="gr gr_lg_8 gr_12">
                                     lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     pellentesque dolor mauris, laoreet ac convallis non,
                                     mattis eget tellus. praesent vitae lobortis orci.
@@ -462,23 +684,27 @@
                                 </div>
                             </div>
 
-                            <div class="expand mt_3">
-                                <div class="bg_lgt pp_2">
-                                    &lt;ul class="<b class="tx_b tx_scn">mn_y mn_stn</b>"&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp; ... <br />
-                                    &lt;/ul&gt; <br />
-                                </div>
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/a3d8dbf02de02f32673144e3022b409b.js"></script>
+                                    </div>
+                                </details>
+                            </div>
                             </div>
 
 
-                            </div>
+
+                        </div>
 
                             <div class="fold">
                             <h1 class="mb_3">Sidebar Light</h1>
 
                             <div class="row">
-                                <div class="gr gr_4 gr_md_12">
-<ul class="mn_y mn_lgt">
+                                <div class="gr gr_lg_4 gr_12">
+<ul class="mn_v mn_lgt">
     <li>
     <input id="group-1-lgt" type="checkbox" hidden />
     <label for="group-1-lgt">Lorem</label>
@@ -510,7 +736,7 @@
 </ul>
 
                                 </div>
-                                <div class="gr gr_8 gr_md_12">
+                                <div class="gr gr_lg_8 gr_12">
                                     lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     pellentesque dolor mauris, laoreet ac convallis non,
                                     mattis eget tellus. praesent vitae lobortis orci.
@@ -518,14 +744,16 @@
                                 </div>
                             </div>
 
-                            <div class="expand mt_3">
-                                <div class="bg_lgt pp_2">
-                                    &lt;ul class="<b class="tx_b tx_scn">mn_y mn_lgt</b>"&gt; <br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp; ... <br />
-                                    &lt;/ul&gt; <br />
-                                </div>
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/2cc770c54f993e696a5a8a8c606db313.js"></script>
+                                    </div>
+                                </details>
                             </div>
-
+                            </div>
 
 
                         </div>
@@ -535,46 +763,29 @@
 
                         <!-- main end -->
                     </div>
-                    <div class="gr gr_2">
-                        <div class="expand mt_3">
-                            <ul class="lt_y lk_prm lk_hv_scn">
-                                <li><a href="../menu"><span class="tx_info">Menu</span></a></li>
-                                <li><a href="../layout">Layout</a></li>
-                                <li><a href="../forms">Form</a></li>
-                                <li><a href="../tables">Table</a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
 
-
-            <footer class="fold">
-                <div class="expand">
-                </div>
-                <div class="expand">
-                    <ul class="lt_x fl_r">
-                        <li>
-                            &copy;
-                            2016 -
-                            <script type="text/javascript">
-                                var date = new Date();
-                                document.write(date.getFullYear());
-                            </script>
-                        </li>
-                        <li><a href="./" class="lk_prm">DobokCSS</a></li>
-                        <li>|</li>
-                        <li><a href="https://github.com/dobokcss/dobokcss" class="lk_prm">GitHub</a></li>
-                        <li>|</li>
-                        <li><a href="./downloads/" class="lk_prm">Downloads</a></li>
-                        <li>|</li>
-                        <li><a href="https://bit.ly/ens-github-io" class="lk_prm" title="@estefanionsantos">by: ens</a></li>
-                    </ul>
-                </div>
-            </footer>
-
         </div>
 
+            <footer class="fold">
+    <div class="container">
+        <ul class="lt_h fl_r lk_info">
+            <li>
+                &copy; 2016 -
+                <script type="text/javascript">
+                    var date = new Date();
+                    document.write(date.getFullYear());
+                </script>
+            </li>
+            <li><a href="./">DobokCSS</a></li>
+            <li>|</li>
+            <li><a href="https://github.com/dobokcss/core">GitHub</a></li>
+            <li>|</li>
+            <li><a href="https://estefanionsantos.github.io/" title="@estefanionsantos">by: ens</a></li>
+        </ul>
+    </div>
+</footer>
 
 
     </body>

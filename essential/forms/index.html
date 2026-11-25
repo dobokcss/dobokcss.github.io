@@ -12,26 +12,26 @@
 
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Forms | Dobok CSS</title>
+        <title>Path/Dir | Dobok CSS</title>
 
-        <link rel="stylesheet" href="../../asset/css/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href=".../../../../assets/css/style.css" type="text/css" media="all" />
     </head>
     <body>
 
-        <div class="expand bg_prm">
+        <header class="bg_prm">
             <div class="container">
-                <input type="checkbox" id="mn_x_bt" />
-                <label for="mn_x_bt">&#9776;</label>
-                <div class="mn_x mn_prm">
+                <input type="checkbox" id="mn_h_bt" />
+                <label for="mn_h_bt" class="tx_lgt">&#9776;</label>
+                <nav class="mn_h mn_prm">
                     <ul>
-                        <li><a href="../">Dobok CSS</a></li>
+                        <li><a href="../../">Dobok CSS</a></li>
                         <li>
                             <a href="#">Essential</a>
                             <ul>
-                                <li><a href="../menu">Menu</a></li>
-                                <li><a href="../layout">Layout</a></li>
-                                <li><a href="../forms">Form</a></li>
-                                <li><a href="../tables">Table</a></li>
+                                <li><a href="../../essential/menu">Menu</a></li>
+                                <li><a href="../../essential/layout">layout</a></li>
+                                <li><a href="../../essential/forms">Form</a></li>
+                                <li><a href="../../essential/tables">Table</a></li>
                             </ul>
                         </li>
                         <!--li>
@@ -67,191 +67,358 @@
                         <li><a href="https://github.com/dobokcss/dobokcss">Github</a></li>
                         <li><a href="../../downloads/">Downloads</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
-        </div>
+        </header>
 
         <div class="container">
-
-            <div class="fold mt_1">
+            <div class="fold mt_3">
                 <div class="row">
                     <div class="gr gr_12">
-                        <h1 class="mb_4">Forms</h1>
+                        <h1 class="mb_3">Form</h1>
                     </div>
                     <div class="gr gr_12">
-                        <ul class="lt_breadcrumb">
-                            <li><a href="../">Essential</a></li>
-                            <li>Forms</li>
+                        <ul class="lt_h lt_dropdown lt_dropdown_r fl_r">
+                            <li><a href="#">Essential +</a>
+                                <ul>
+                                    <li><a href="../../essential/menu">Menu</a></li>
+                                    <li><a href="../../essential/layout">Layout</a></li>
+                                    <li><a href="../../essential/form"><span class="tx_info">Form</span></a></li>
+                                    <li><a href="../../essential/tables">Table</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="expand mb_100">
-                <div class="row">
-                    <div class="gr gr_12">
-                        <h1 class="tx_md_md tx_b">Stacked Form</h1>
-                        <p>
-                            Here's a quick example to demonstrate dobokcss form styles. <br />
-                        </p>
+        </div>
+
+        <main class="fx_content">
+            <div class="container">
+                <div class="fold">
+                    <div class="mb_3">
+                        <h1>Basic</h1>
                     </div>
+
+                    <form>
+                        <div class="row">
+                            <div class="gr gr_12 gr_field">
+                                <label for="email">E-mail:</label>
+                                <input type="email" name="email" id="email" value="" />
+                            </div>
+                            <div class="gr gr_12 gr_field">
+                                <label for="password">Password:</label>
+                                <input type="email" name="email" id="password" value="" />
+                            </div>
+                            <div class="gr gr_12">
+                                <input type="button" name="submit" class="bt bt_prm" value="Submit" />
+                            </div>
+                        </div>
+                    </form>
+
+
+                    <div class="w_100 mt_2">
+                        <div class="accordion">
+                            <details>
+                                <summary> view source code</summary>
+                                <div class="accordion-content">
+                                    <script src="https://gist.github.com/estefanionsantos/0618d164839e60d9370149acfad5d961.js"></script>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="row">
-                    <div class="gr gr_10 gr_md_12">
-                        <!-- main -->
-
-                        <div class="fold bd bd_b_stn">
-                            <form>
-                                <div class="row">
-                                    <div class="gr gr_8 gr_md_12">
-                                        <div class="row">
-                                            <div class="gr gr_12 gr_field">
-                                                <input type="email" name="email" placeholder="Email" />
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="gr gr_12 gr_field">
-                                                <input type="password" name="password" placeholder="Password" />
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="gr gr_12">
-                                                <button class="bt bt_prm">Send</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="expand my_1">
-                                <script src="https://gist.github.com/estefanionsantos/52c62b83ab52722e6cdea66f85abf98c.js"></script>
-                            </div>
-
-                        </div>
-                        <!--  -->
-
-                        <div class="fold bd bd_b_stn">
-                            <div class="expand">
-                                <h1 class="mb_2">Inline form</h1>
-                                <p class="mb_2">
-                                    To create a default inline form
-                                </p>
-                            </div>
-                            <form>
-                                <div class="row row_fluid">
-                                    <div class="gr gr_4 gr_field gr_md_12">
-                                        <input type="email" name="email" placeholder="Email" />
-                                    </div>
-                                    <div class="gr gr_4 gr_field gr_md_12">
-                                        <input type="password" name="password" placeholder="password" />
-                                    </div>
-                                    <div class="gr gr_4">
-                                        <button class="bt bt_prm">Send</button>
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="expand my_1">
-                                <script src="https://gist.github.com/estefanionsantos/d8ee8f690729a94191b40c9ba1a3ee67.js"></script>
-                            </div>
-                        </div>
-                        <!--  -->
-
-                        <div class="fold bd bd_b_stn">
-                            <div class="expand">
-                                <h1 class="mb_2">Aligned Form</h1>
-                                <p class="mb_2">
-                                    To create a default Inline form
-                                </p>
-                            </div>
-                            <form>
-                                <div class="row row_fluid">
-                                    <div class="gr gr_4 gr_field gr_md_12">
-                                        <label for="first_name">First Name:</label>
-                                        <input type="text" id="first_name" />
-                                    </div>
-                                    <div class="gr gr_4 gr_field gr_md_12">
-                                        <label for="last_name">Last Name:</label>
-                                        <input type="text" id="last_name" />
-                                    </div>
-                                    <div class="gr gr_4 gr_field gr_md_12">
-                                        <label for="email">E-Mail</label>
-                                        <input type="email" id="email" />
-                                    </div>
-                                </div>
-                                <div class="row row_fluid">
-                                    <div class="gr gr_4 gr_field gr_md_12">
-                                        <label for="city">City:</label>
-                                        <input type="text" id="city" />
-                                    </div>
-                                    <div class="gr gr_4 gr_field gr_md_12">
-                                        <label for="state">State:</label>
-                                        <select id="state">
-                                            <option value="rs">RS</option>
-                                            <option value="sc">SC</option>
-                                            <option value="PR">PR</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="gr gr_12">
-                                        <button class="bt bt_prm">
-                                            Submit
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="expand my_1">
-                                <script src="https://gist.github.com/estefanionsantos/238f2739bbed5ff7310c2c3b0ccb8489.js"></script>
-                            </div>
-                        </div>
-                        <!--  -->
 
 
-                        <!-- main end -->
+                <div class="fold">
+                    <div class="mb_3">
+                        <h1>Grid</h1>
                     </div>
-                    <div class="gr gr_2 gr_md_12">
-                        <div class="expand mt_3">
-                            <ul class="lt_y lk_prm lk_hv_scn">
-                                <li><a href="../menu">Menu</a></li>
-                                <li><a href="../layout">Layout</a></li>
-                                <li><a href="../forms"><span class="tx_info">Forms</span></a></li>
-                                <li><a href="../tables">Table</a></li>
+                    <form>
+                        <div class="row">
+                            <div class="gr gr_lg_6 gr_12 gr_field">
+                                <input type="text" name="first_name" placeholder="First Name" />
+                            </div>
+                            <div class="gr gr_lg_6 gr_12 gr_field">
+                                <input type="text" name="last_name" placeholder="Last Name" />
+                            </div>
+                            <div class="gr gr_12">
+                                <input type="button" name="submit" class="bt bt_prm fl_r" value="Submit" />
+                            </div>
+                        </div>
+                    </form>
+
+                        <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/1aa48d516dd0270519d238d3366351ca.js"></script>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+
+                </div>
+
+                <div class="fold">
+                    <div class="mb_3">
+                        <h1>layout</h1>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="gr gr_lg_6 gr_12 gr_field">
+                                <label for="first_name">First Name:</label>
+                                <input type="text" id="first_name" name="first_name" />
+                            </div>
+                            <div class="gr gr_lg_6 gr_12 gr_field">
+                                <label for="last_name">Last Name:</label>
+                                <input type="text" id="last_name" name="last_name" />
+                            </div>
+
+                            <div class="gr gr_12 gr_field">
+                                <label for="address">Address:</label>
+                                <input type="text" id="address" name="address" />
+                            </div>
+                            <div class="gr gr_lg_4 gr_12 gr_field">
+                                <label for="city">City:</label>
+                                <input type="text" id="city" name="city" />
+                            </div>
+                            <div class="gr gr_lg_4 gr_12 gr_field">
+                                <label for="state">State:</label>
+                                <select id="state" name="state">
+                                    <option value="choose">choose</option>    
+                                    <option value="rs">RS</option>    
+                                    <option value="rj">RJ</option>    
+                                    <option value="sp">SP</option>    
+                                </select>
+                            </div>
+                            <div class="gr gr_lg_4 gr_12 gr_field">
+                                <label for="zip">Zip:</label>
+                                <input type="text" id="zip" name="zip" />
+                            </div>
+
+                            <div class="gr gr_12 gr_field">
+                                <label for="description">Description:</label>
+                                <textarea id="description" name="description" rows="8" cols="30"></textarea>
+                            </div>
+
+                            <div class="gr gr_12">
+                                <input type="button" name="submit" class="bt bt_scn" value="Submit" />
+                            </div>
+                        </div>
+                    </form>
+
+
+                    <div class="w_100 mt_2">
+                        <div class="accordion">
+                            <details>
+                                <summary> View source code</summary>
+                                <div class="accordion-content">
+                                    <script src="https://gist.github.com/estefanionsantos/280550a80ebe319fe4f6119cf4e3fff9.js"></script>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="fold">
+                    <div class="mb_3">
+                        <h1>check</h1>
+                    </div>
+
+                    <div class="row_flex">
+                        <div class="gr_flex">
+                            <ul class="lt_v">
+                                <li>
+                                    <input type="checkbox" id="c1" name="lorem" value="lorem" checked /> 
+                                    <label for="c1">lorem</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="c2" name="ipsum" value="ipsum" /> 
+                                    <label for="c2">ipsum</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="c3" name="dolor" value="dolor" /> 
+                                    <label for="c3">dolor</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="gr_flex">
+                            <ul class="lt_v lt_high">
+                                <li>
+                                    <input type="checkbox" id="c4" name="sit" value="sit" checked  /> 
+                                    <label for="c4">sit</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="c5" name="amet" value="amet" /> 
+                                    <label for="c5">amet</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="c6" name="cursus" value="cursus" /> 
+                                    <label for="c6">cursus</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="gr_flex">
+                            <ul class="lt_v lt_mid">
+                                <li>
+                                    <input type="checkbox" id="c7" name="aliquam" value="aliquam" checked /> 
+                                    <label for="c7">aliquam</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="c8" name="tincidunt" value="tincidunt" /> 
+                                    <label for="c8">tincidunt</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="c9" name="ligula" value="ligula"  /> 
+                                    <label for="c9">ligula</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="gr_flex">
+                            <ul class="lt_v lt_low">
+                                <li>
+                                    <input type="checkbox" id="c10" name="nulla" value="nulla" checked /> 
+                                    <label for="c10">nulla</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="c11" name="proin" value="proin" /> 
+                                    <label for="c11">proin</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="c12" name="aliquam" value="aliquam" /> 
+                                    <label for="c12">aliquam</label>
+                                </li>
                             </ul>
                         </div>
                     </div>
+
+                    <div class="gr_flex">
+                        <div class="accordion mt_4">
+                            <details>
+                                <summary> View source code</summary>
+                                <div class="accordion-content">
+                                    <script src="https://gist.github.com/estefanionsantos/992d1ef58b342cb50d410d7064268aa0.js"></script>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+
+                    </div>
+                    
+
+
+
+                <div class="fold">
+                    <div class="mb_3">
+                        <h1>Radio</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="gr gr_12 gr_field">
+                            <ul class="lt_v">
+                                <li>
+                                    <input type="radio" id="r1" name="radio" value="1" /> 
+                                    <label for="r1">Lorem</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="r2" name="radio" value="2" /> 
+                                    <label for="r2">ipsum</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="r3" name="radio" value="3" /> 
+                                    <label for="r3">dolor</label>
+                                </li>
+                            </ul>    
+                        </div>
+                    </div>
+
+
+                    <div class="w_100 mt_2">
+                        <div class="accordion">
+                            <details>
+                                <summary> View source code</summary>
+                                <div class="accordion-content">
+                                    <script src="https://gist.github.com/estefanionsantos/d3111d22d76ab47ab9036d3ac1b8d62f.js"></script>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="fold">
+                    <div class="mb_3">
+                        <h1>Select</h1>
+                    </div>
+
+                    <div class="row_flex">
+                        <div class="gr_flex_2 gr_field">
+                            Default:
+                            <select>
+                                <option value="1">lorem</option>
+                                <option value="2">ipsum</option>
+                                <option value="3">dolor</option>
+                                <option value="4">sit</option>
+                            </select>
+                        </div>
+
+                        <div class="gr_flex_2 gr_field">
+                            Multiple:
+                            <select multiple>
+                                <option value="1">lorem</option>
+                                <option value="2">ipsum</option>
+                                <option value="3">dolor</option>
+                                <option value="4">sit</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="w_100 mt_2">
+                        <div class="accordion">
+                            <details>
+                                <summary> View source code</summary>
+                                <div class="accordion-content">
+                                    <script src="https://gist.github.com/estefanionsantos/55b40cc673725eaa79cf1030cb0ab242.js"></script>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+
+
             </div>
+        </main>
 
-
-            <footer class="fold">
-                <div class="expand">
-                </div>
-                <div class="expand">
-                    <ul class="lt_x fl_r">
-                        <li>
-                            &copy;
-                            2016 -
-                            <script type="text/javascript">
-                                var date = new Date();
-                                document.write(date.getFullYear());
-                            </script>
-                        </li>
-                        <li><a href="./" class="lk_prm">DobokCSS</a></li>
-                        <li>|</li>
-                        <li><a href="https://github.com/dobokcss/dobokcss" class="lk_prm">GitHub</a></li>
-                        <li>|</li>
-                        <li><a href="./downloads/" class="lk_prm">Downloads</a></li>
-                        <li>|</li>
-                        <li><a href="https://bit.ly/ens-github-io" class="lk_prm" title="@estefanionsantos">by: ens</a></li>
-                    </ul>
-                </div>
-            </footer>
-
-        </div>
-
-
+                <footer class="fold">
+                    <div class="container">
+                        <ul class="lt_h fl_r lk_info">
+                            <li>
+                                &copy; 2016 -
+                                <script type="text/javascript">
+                                    var date = new Date();
+                                    document.write(date.getFullYear());
+                                </script>
+                            </li>
+                            <li><a href="../../">DobokCSS</a></li>
+                            <li>|</li>
+                            <li><a href="https://github.com/dobokcss/core">GitHub</a></li>
+                            <li>|</li>
+                            <li><a href="https://estefanionsantos.github.io/" title="@estefanionsantos">by: ens</a></li>
+                        </ul>
+                    </div>
+                </footer>
 
     </body>
 </html>
-
 
 
 

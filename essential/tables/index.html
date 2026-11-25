@@ -14,24 +14,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tables | Dobok CSS</title>
 
-        <link rel="stylesheet" href="../../asset/css/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href=".../../../../assets/css/style.css" type="text/css" media="all" />
     </head>
     <body>
 
-        <div class="x_100 bg_prm">
+        <header class="bg_prm">
             <div class="container">
-                <input type="checkbox" id="mn_x_bt" />
-                <label for="mn_x_bt">&#9776;</label>
-                <div class="mn_x mn_prm">
+                <input type="checkbox" id="mn_h_bt" />
+                <label for="mn_h_bt" class="tx_lgt">&#9776;</label>
+                <nav class="mn_h mn_prm">
                     <ul>
-                        <li><a href="../">Dobok CSS</a></li>
+                        <li><a href="../../">Dobok CSS</a></li>
                         <li>
                             <a href="#">Essential</a>
                             <ul>
-                                <li><a href="../menu">Menu</a></li>
-                                <li><a href="../layout">Layout</a></li>
-                                <li><a href="../forms">Form</a></li>
-                                <li><a href="../tables">Table</a></li>
+                                <li><a href="../../essential/menu">Menu</a></li>
+                                <li><a href="../../essential/layout">layout</a></li>
+                                <li><a href="../../essential/forms">Form</a></li>
+                                <li><a href="../../essential/tables">Table</a></li>
                             </ul>
                         </li>
                         <!--li>
@@ -67,318 +67,284 @@
                         <li><a href="https://github.com/dobokcss/dobokcss">Github</a></li>
                         <li><a href="../../downloads/">Downloads</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
-        </div>
+        </header>
 
         <div class="container">
-
-            <div class="fold mt_1">
+            <div class="fold mt_3">
                 <div class="row">
                     <div class="gr gr_12">
-                        <h1 class="mb_4">Tables</h1>
+                        <h1 class="mb_3">Tables</h1>
                     </div>
                     <div class="gr gr_12">
-                        <ul class="lt_breadcrumb">
-                            <li><a href="../">Essential</a></li>
-                            <li>Tables</li>
+                        <ul class="lt_h lt_dropdown lt_dropdown_r fl_r">
+                            <li><a href="#">Essential +</a>
+                                <ul>
+                                    <li><a href="../../essential/menu">Menu</a></li>
+                                    <li><a href="../../essential/layout">Layout</a></li>
+                                    <li><a href="../../essential/forms">Form</a></li>
+                                    <li><a href="../../essential/tables"><span class="tx_info">Tables</span></a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="x_100 mb_6">
-                <div class="row">
-                    <div class="gr gr_12">
-                        <h1 class="tx_md_md tx_b">Table border</h1>
-                        <p>
-                            Here's a quick example to demonstrate dobokcss form styles. <br />
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="gr gr_10 gr_md_12">
-                        <!-- main -->
-
-                        <div class="fold bd bd_b_stn">
-                            <table class="tb_border x_100">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Name</th>
-                                        <th>Occupation</th>
-                                        <th>User</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>John</td>
-                                        <td>Engineer</td>
-                                        <td>@john</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Mary</td>
-                                        <td>Doctor</td>
-                                        <td>@mary</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Joseph</td>
-                                        <td>dentist</td>
-                                        <td>@Joseph</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="x_100 my_1">
-                                <script src="https://gist.github.com/estefanionsantos/f69d28a5b5576c57f548899315ca8555.js"></script>
-                            </div>
-                        </div>
-                        <!--  -->
-
-                        <div class="fold bd bd_b_stn">
-                            <div class="x_100">
-                                <h1 class="mb_2">Table Hover</h1>
-                            </div>
-
-                            <div class="x_100">
-                                <table class="tb_hv x_100">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Name</th>
-                                            <th>Occupation</th>
-                                            <th>User</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>John</td>
-                                            <td>Engineer</td>
-                                            <td>@john</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Mary</td>
-                                            <td>Doctor</td>
-                                            <td>@mary</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Joseph</td>
-                                            <td>dentist</td>
-                                            <td>@Joseph</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="x_100 my_1">
-                                <script src="https://gist.github.com/estefanionsantos/33156ba485183868ff477ef7664dce6d.js"></script>
-                            </div>
-
-                        </div>
-                        <!--  -->
-                        <div class="fold bd bd_b_stn">
-                            <div class="x_100">
-                                <h1 class="mb_2">Table Striped</h1>
-                            </div>
-
-                            <div class="x_100">
-                                <table class="tb_striped x_100">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Name</th>
-                                            <th>Occupation</th>
-                                            <th>User</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>John</td>
-                                            <td>Engineer</td>
-                                            <td>@john</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Mary</td>
-                                            <td>Doctor</td>
-                                            <td>@mary</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Joseph</td>
-                                            <td>dentist</td>
-                                            <td>@Joseph</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="x_100 my_1">
-                                <script src="https://gist.github.com/estefanionsantos/c07e03203a4c6ec310fee7d731df9331.js"></script>
-                            </div>
-                        </div>
-                        <!--  -->
-
-
-                        <div class="fold bd bd_b_stn">
-<div class="x_100">
-                                <h1 class="mb_2">Table fill</h1>
-                            </div>
-                            <div class="x_100">
-                                <table class="tb_fill x_100">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Name</th>
-                                            <th>Occupation</th>
-                                            <th>User</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>John</td>
-                                            <td>Engineer</td>
-                                            <td>@john</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Mary</td>
-                                            <td>Doctor</td>
-                                            <td>@mary</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Joseph</td>
-                                            <td>dentist</td>
-                                            <td>@Joseph</td>
-                                        </tr>
-                                    </tbody>
-                                </table>   
-                            </div>
-                            <div class="x_100 my_1">
-                                <script src="https://gist.github.com/estefanionsantos/6f7288486fbee7f85f6f26fb6f674f49.js"></script>
-                            </div>
-                        </div>
-                        <!--  -->
-
-                        <div class="fold bd bd_b_stn">
-                            <div class="x_100">
-                                <h1 class="mb_2">Table Responsive</h1>
-                            </div>
-                            <div class="x_100">
-                                <table class="tb_border tb_fluid x_100">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Name</th>
-                                            <th>Occupation</th>
-                                            <th>User</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td colname="Id">1</td>
-                                            <td colname="Name">John</td>
-                                            <td colname="Occupation">Engineer</td>
-                                            <td colname="User">@john</td>
-                                        </tr>
-                                        <tr>
-                                            <td colname="Id">2</td>
-                                            <td colname="Name">Mary</td>
-                                            <td colname="Occupation">Doctor</td>
-                                            <td colname="User">@mary</td>
-                                        </tr>
-                                        <tr>
-                                            <td colname="Id">3</td>
-                                            <td colname="Name">Joseph</td>
-                                            <td colname="Occupation">dentist</td>
-                                            <td colname="User">@Joseph</td>
-                                        </tr>
-                                    </tbody>
-                                </table>   
-                            </div>
-                            <div class="x_100 my_1">
-                                <div class="x_100 mb_1">
-                                    &lt;table class="tb_border <b class="tx_b tx_scn">tb_fluid x_100</b>"&gt;
-                                </div>
-
-                                <div class="x_100 pp_1 mb_1">
-
-                                    <div class="pp_1">
-                                        ... <br />
-                                        &lt;tbody&gt; <br />
-                                        &lt;tr&gt; <br />
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td <b class="tx_b tx_scn">colname="Id"</b>&gt;1&lt;/td&gt; <br />
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td <b class="tx_b tx_scn">colname="Name"</b>&gt;John&lt;/td&gt; <br />
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td <b class="tx_b tx_scn">colname="Occupation"</b>&gt;Engineer&lt;/td&gt; <br />
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td <b class="tx_b tx_scn">colname="User"</b>&gt;@john&lt;/td&gt; <br />
-                                        &lt;/tr&gt; <br />
-                                        ... <br />
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="x_100 my_1">
-                                <script src="https://gist.github.com/estefanionsantos/bc2c7ef9e5a344754be630ccbcd4bd21.js"></script>
-                            </div>
-                        </div>
-                        <!--  -->
-
-                        
-
-                        <!-- main end -->
-                    </div>
-                    <div class="gr gr_2 gr_md_12">
-                        <div class="x_100 mt_3">
-                            <ul class="lt_y lk_prm lk_hv_scn">
-                                <li><a href="../menu">Menu</a></li>
-                                <li><a href="../layout">Layout</a></li>
-                                <li><a href="../forms">Form</a></li>
-                                <li><a href="../tables"><span class="tx_info">Table</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <footer class="fold">
-                <div class="x_100">
-                </div>
-                <div class="x_100">
-                    <ul class="lt_x fl_r">
-                        <li>
-                            &copy;
-                            2016 -
-                            <script type="text/javascript">
-                                var date = new Date();
-                                document.write(date.getFullYear());
-                            </script>
-                        </li>
-                        <li><a href="./" class="lk_prm">DobokCSS</a></li>
-                        <li>|</li>
-                        <li><a href="https://github.com/dobokcss/dobokcss" class="lk_prm">GitHub</a></li>
-                        <li>|</li>
-                        <li><a href="./downloads/" class="lk_prm">Downloads</a></li>
-                        <li>|</li>
-                        <li><a href="https://bit.ly/ens-github-io" class="lk_prm" title="@estefanionsantos">by: ens</a></li>
-                    </ul>
-                </div>
-            </footer>
-
         </div>
 
+        <main class="fx_content">
+            <div class="container">
+                <div class="fold">
+                    <h1>border</h1>
+                    <table class="tb tb_border">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Occupation</th>
+                                <th>User</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>John</td>
+                                <td>Engineer</td>
+                                <td>@john</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mary</td>
+                                <td>Doctor</td>
+                                <td>@mary</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Joseph</td>
+                                <td>dentist</td>
+                                <td>@Joseph</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/00ee4837b0bc1afb77e5cb7abbcf608b.js"></script>
+                                    </div>
+                                </details>
+                            </div>
+                            </div>
+                </div>
+
+                <div class="fold">
+                    <h1>Fill</h1>
+                    <table class="tb tb_fill">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Occupation</th>
+                                <th>User</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>John</td>
+                                <td>Engineer</td>
+                                <td>@john</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mary</td>
+                                <td>Doctor</td>
+                                <td>@mary</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Joseph</td>
+                                <td>dentist</td>
+                                <td>@Joseph</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/aa5c57167f91cb311b0a1ab1fa64429c.js"></script>
+                                    </div>
+                                </details>
+                            </div>
+                            </div>
+                </div>
+
+                <div class="fold">
+                    <h1>hover</h1>
+                    <table class="tb tb_hv">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Occupation</th>
+                                <th>User</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>John</td>
+                                <td>Engineer</td>
+                                <td>@john</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mary</td>
+                                <td>Doctor</td>
+                                <td>@mary</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Joseph</td>
+                                <td>dentist</td>
+                                <td>@Joseph</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/e4bca1598d63c4b325dc809c1da885ef.js"></script>
+                                    </div>
+                                </details>
+                            </div>
+                            </div>
+                </div>
+
+                <div class="fold">
+                    <h1>Striped</h1>
+                    <table class="tb tb_striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Occupation</th>
+                                <th>User</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>John</td>
+                                <td>Engineer</td>
+                                <td>@john</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mary</td>
+                                <td>Doctor</td>
+                                <td>@mary</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Joseph</td>
+                                <td>dentist</td>
+                                <td>@Joseph</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/5d6ae3566e6043801071466f03c6170c.js"></script>
+                                    </div>
+                                </details>
+                            </div>
+                            </div>
+                </div>
+
+
+                <div class="fold">
+                    <h1>Stack</h1>
+                    <table class="tb tb_border tb_stack">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Occupation</th>
+                                <th>User</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colname="Id">1</td>
+                                <td colname="Name">John</td>
+                                <td colname="Occupation">Engineer</td>
+                                <td colname="User">@john</td>
+                            </tr>
+                            <tr>
+                                <td colname="Id">2</td>
+                                <td colname="Name">Mary</td>
+                                <td colname="Occupation">Doctor</td>
+                                <td colname="User">@mary</td>
+                            </tr>
+                            <tr>
+                                <td colname="Id">3</td>
+                                <td colname="Name">Joseph</td>
+                                <td colname="Occupation">dentist</td>
+                                <td colname="User">@Joseph</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                            <div class="w_100 mt_2">
+                            <div class="accordion">
+                                <details>
+                                    <summary> View source code</summary>
+                                    <div class="accordion-content">
+                                        <script src="https://gist.github.com/estefanionsantos/e677371f4ef03cb13981d270a08cf858.js"></script>
+                                    </div>
+                                </details>
+                            </div>
+                            </div>
+
+                </div>
+            </div>
+        </main>
+
+                <footer class="fold">
+                    <div class="container">
+                        <ul class="lt_h fl_r lk_info">
+                            <li>
+                                &copy; 2016 -
+                                <script type="text/javascript">
+                                    var date = new Date();
+                                    document.write(date.getFullYear());
+                                </script>
+                            </li>
+                            <li><a href="../../">DobokCSS</a></li>
+                            <li>|</li>
+                            <li><a href="https://github.com/dobokcss/core">GitHub</a></li>
+                            <li>|</li>
+                            <li><a href="https://estefanionsantos.github.io/" title="@estefanionsantos">by: ens</a></li>
+                        </ul>
+                    </div>
+                </footer>
 
     </body>
 </html>
-
-
 
 
 

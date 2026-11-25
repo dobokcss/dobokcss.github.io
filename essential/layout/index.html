@@ -14,15 +14,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Layout | Dobok CSS</title>
 
-        <link rel="stylesheet" href="../../asset/css/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../../assets/css/style.css" type="text/css" media="all" />
     </head>
     <body>
 
-        <div class="expand bg_prm">
+        <header class="bg_prm">
             <div class="container">
-                <input type="checkbox" id="mn_x_bt" />
-                <label for="mn_x_bt">&#9776;</label>
-                <div class="mn_x mn_prm">
+                <input type="checkbox" id="mn_h_bt" />
+                <label for="mn_h_bt" class="tx_lgt">&#9776;</label>
+                <nav class="mn_h mn_prm">
                     <ul>
                         <li><a href="../">Dobok CSS</a></li>
                         <li>
@@ -67,186 +67,265 @@
                         <li><a href="https://github.com/dobokcss/dobokcss">Github</a></li>
                         <li><a href="../../downloads/">Downloads</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
-        </div>
+        </header>
 
         <div class="container">
-
             <div class="fold mt_3">
                 <div class="row">
                     <div class="gr gr_12">
                         <h1 class="mb_3">Layout</h1>
                     </div>
+
                     <div class="gr gr_12">
-                        <ul class="lt_breadcrumb">
-                            <li><a href="../">Essential</a></li>
-                            <li>Layout</li>
+                        <ul class="lt_h lt_dropdown lt_dropdown_r fl_r">
+                            <li><a href="#">Essential +</a>
+                                <ul>
+                                    <li><a href="../menu">Menu</a></li>
+                                    <li><a href="../layout"><span class="tx_info">Layout</span></a></li>
+                                    <li><a href="../forms">Form</a></li>
+                                    <li><a href="../tables">Table</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="expand mb_100">
-                <div class="row">
-                    <div class="gr gr_12 mb_4">
-                        <h1 class="tx_md_md tx_b mb_2">Twelve-column system</h1>
-                        <p>
-                            Use our grid to create layouts of all shapes 
-                            and sizes thanks to a twelve-column system. 
-                            Simple and intuitive
-                        </p>
+                <div class="w_100 mb_100">
+                    <div class="row">
+                        <div class="gr gr_12 mb_4">
+                            <h1 class="tx_md_md tx_b mb_2">Twelve-column system</h1>
+                            <p>
+                                Use our grid to create layouts of all shapes 
+                                and sizes thanks to a twelve-column system. 
+                                Simple and intuitive
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="gr gr_10 gr_md_12">
-                        <!-- main -->
-<div class="fold bd bd_b_stn">
-    <div class="row">
-        <div class="gr gr_12 bg">12</div>
-    </div>
-    <div class="row">
-        <div class="gr gr_1 bg">1</div>
-        <div class="gr gr_1 bg">1</div>
-        <div class="gr gr_1 bg">1</div>
-        <div class="gr gr_1 bg">1</div>
-        <div class="gr gr_1 bg">1</div>
-        <div class="gr gr_1 bg">1</div>
-        <div class="gr gr_1 bg">1</div>
-        <div class="gr gr_1 bg">1</div>
-        <div class="gr gr_1 bg">1</div>
-        <div class="gr gr_1 bg">1</div>
-        <div class="gr gr_1 bg">1</div>
-        <div class="gr gr_1 bg">1</div>
-    </div>
+                    <div class="row">
+                        <div class="gr gr_12">
+                            <!-- main -->
+                            <div class="fold bg_gr">
+                                <div class="row">
+                                    <div class="gr gr_1 bg_info">1</div>
+                                    <div class="gr gr_11">11</div>
 
-    <div class="row">
-        <div class="gr gr_1 bg">1</div>
-        <div class="gr gr_11 bg">11</div>
-    </div>
-    <div class="row">
-        <div class="gr gr_2 bg">2</div>
-        <div class="gr gr_10 bg">10</div>
-    </div>
-    <div class="row">
-        <div class="gr gr_3 bg">3</div>
-        <div class="gr gr_9 bg">9</div>
-    </div>
-    <div class="row">
-        <div class="gr gr_4 bg">4</div>
-        <div class="gr gr_8 bg">8</div>
-    </div>
-    <div class="row">
-        <div class="gr gr_5 bg">5</div>
-        <div class="gr gr_7 bg">7</div>
-    </div>
-    <div class="row">
-        <div class="gr gr_6 bg">6</div>
-        <div class="gr gr_6 bg">6</div>
-    </div>
+                                    <div class="gr gr_2 bg_info">2</div>
+                                    <div class="gr gr_10">10</div>
 
-    <div class="row">
-        <div class="gr gr_4 bg">4</div>
-        <div class="gr gr_4 bg">4</div>
-        <div class="gr gr_4 bg">4</div>
-    </div>
+                                    <div class="gr gr_3 bg_info">1</div>
+                                    <div class="gr gr_9">9</div>
 
-    <div class="row">
-        <div class="gr gr_3 bg">3</div>
-        <div class="gr gr_3 bg">3</div>
-        <div class="gr gr_3 bg">3</div>
-        <div class="gr gr_3 bg">3</div>
-    </div>
+                                    <div class="gr gr_4 bg_info">4</div>
+                                    <div class="gr gr_8">8</div>
 
-    <div class="expand py_1">
-        <script src="https://gist.github.com/estefanionsantos/02ad5f3620a77bbba9332a82e1d058e2.js"></script>
+                                    <div class="gr gr_5 bg_info">5</div>
+                                    <div class="gr gr_7">7</div>
 
-    </div>
-        
-</div>
+                                    <div class="gr gr_6 bg_info">6</div>
+                                    <div class="gr gr_6">6</div>
+
+                                    <div class="gr gr_7 bg_info">7</div>
+                                    <div class="gr gr_5">5</div>
+
+                                    <div class="gr gr_8 bg_info">8</div>
+                                    <div class="gr gr_4">4</div>
+
+                                    <div class="gr gr_9 bg_info">9</div>
+                                    <div class="gr gr_3">3</div>
+
+                                    <div class="gr gr_10 bg_info">10</div>
+                                    <div class="gr gr_2">2</div>
+
+                                    <div class="gr gr_11 bg_info">11</div>
+                                    <div class="gr gr_1">1</div>
+
+                                    <div class="gr gr_12 bg_info">12</div>
+
+                                    <div class="gr gr_1">1</div>
+                                    <div class="gr gr_1">1</div>
+                                    <div class="gr gr_1">1</div>
+                                    <div class="gr gr_1">1</div>
+                                    <div class="gr gr_1">1</div>
+                                    <div class="gr gr_1">1</div>
+                                    <div class="gr gr_1">1</div>
+                                    <div class="gr gr_1">1</div>
+                                    <div class="gr gr_1">1</div>
+                                    <div class="gr gr_1">1</div>
+                                    <div class="gr gr_1">1</div>
+                                    <div class="gr gr_1">1</div>
+
+                                    <div class="gr gr_2">2</div>
+                                    <div class="gr gr_2">2</div>
+                                    <div class="gr gr_2">2</div>
+                                    <div class="gr gr_2">2</div>
+                                    <div class="gr gr_2">2</div>
+                                    <div class="gr gr_2">2</div>
+
+                                    <div class="gr gr_3">3</div>
+                                    <div class="gr gr_3">3</div>
+                                    <div class="gr gr_3">3</div>
+                                    <div class="gr gr_3">3</div>
+
+                                    <div class="gr gr_4">4</div>
+                                    <div class="gr gr_4">4</div>
+                                    <div class="gr gr_4">4</div>
+                                </div>
+
+                                <div class="accordion">
+                                    <details>
+                                        <summary> View source code</summary>
+                                        <div class="accordion-content">
+                                            <script src="https://gist.github.com/estefanionsantos/22ec1f5653a2f6c26aac526105f8d067.js"></script>
+                                        </div>
+                                    </details>
+                                </div>
+
+                            </div>
+
+                            <!--  -->
+                            <div class="fold bd bd_b_stn bg_gr">
+                                <div class="w_100 mb_4">
+                                    <h1 class="mb_2 tx_md_md tx_b">From column to row</h1>
+                                    <p class="mb_1">
+                                        When the width decreases, the 3 columns become rows
+                                    </p>
+                                </div>
+                                <div class="w_100 mb_1">
+                                    <div class="row">
+                                        <div class="gr gr_lg_4 gr_12">4</div>
+                                        <div class="gr gr_lg_4 gr_12">4</div>
+                                        <div class="gr gr_lg_4 gr_12">4</div>
+                                    </div>
+                                </div>
+                                <div class="w_100">
+                                </div>
+                                <div class="accordion">
+                                    <details>
+                                        <summary> View source code</summary>
+                                        <div class="accordion-content">
+                                            <script src="https://gist.github.com/estefanionsantos/544cbe5277b25db9a5c59e1206d53079.js"></script>
+                                        </div>
+                                    </details>
+                                </div>
+
+                            </div>
+
+                            <div class="fold bd bd_b_stn bg_gr">
+                                <div class="w_100 mb_4">
+                                    <h1 class="mb_2 tx_md_md tx_b">One row and 2 columns for mobile</h1>
+                                    <p class="mb_1">
+                                        Fully responsive. Below is an example and an in-depth look at how the grid comes together.
+                                    </p>
+                                </div>
+                                <div class="w_100 mb_1">
+                                    <div class="row">
+                                        <div class="gr gr_lg_4 gr_12">4</div>
+                                        <div class="gr gr_lg_4 gr_6">4</div>
+                                        <div class="gr gr_lg_4 gr_6">4</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion">
+                                    <details>
+                                        <summary> View source code</summary>
+                                        <div class="accordion-content">
+                                            <script src="https://gist.github.com/estefanionsantos/dee2bce1e6f90f2697cc6f8d5ec4d3b3.js"></script>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="fold bg_gr">
+                                <h1 class="mb_3">Grid flex 4</h1>
+                                <p class="mb_3">If there are 4 blocks and only 3 fit in the line, this 4th one falls to the bottom line and fills 100% by itself!</p>
+                                <div class="row_flex">
+                                    <div class="gr_flex_4">1</div>
+                                    <div class="gr_flex_4">2</div>
+                                    <div class="gr_flex_4">3</div>
+                                    <div class="gr_flex_4">4</div>
+                                </div>
+
+                                <div class="fold accordion">
+                                    <details>
+                                        <summary>View source code</summary>
+                                        <div class="accordion-content">
+                                            <script src="https://gist.github.com/estefanionsantos/2a543e93dbd612fccbdfd225e61f5c43.js"></script>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+
+                            <div class="fold bg_gr">
+                                <h1 class="mb_3">Grid flex 3</h1>
+                                <p class="mb_3">Item 4 (Expands on the line below)</p>
+
+                                <div class="row_flex">
+                                    <div class="gr_flex_3">1</div>
+                                    <div class="gr_flex_3">2</div>
+                                    <div class="gr_flex_3">3</div>
+                                    <div class="gr_flex_3">4</div>
+                                </div>
 
 
-<!--  -->
-<div class="fold bd bd_b_stn">
-    <div class="expand mb_4">
-        <h1 class="mb_2 tx_md_md tx_b">From column to row</h1>
-        <p class="mb_1">
-            When the width decreases, the 3 columns become rows
-        </p>
-    </div>
-    <div class="expand mb_1">
-        <div class="row row_fluid">
-            <div class="gr gr_4 gr_md_12 bg">4</div>
-            <div class="gr gr_4 gr_md_12 bg">4</div>
-            <div class="gr gr_4 gr_md_12 bg">4</div>
-        </div>
-    </div>
-    <div class="expand">
-        <script src="https://gist.github.com/estefanionsantos/544cbe5277b25db9a5c59e1206d53079.js"></script>
-    </div>
-</div>
+                                <div class="fold accordion">
+                                    <details>
+                                        <summary>View source code</summary>
+                                        <div class="accordion-content">
+                                            <script src="https://gist.github.com/estefanionsantos/c47c5606c683ea3450a6c50fa5c86abf.js"></script>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
 
-<div class="fold bd bd_b_stn">
-    <div class="expand mb_4">
-        <h1 class="mb_2 tx_md_md tx_b">One row and 2 columns for mobile</h1>
-        <p class="mb_1">
-            Fully responsive. Below is an example and an in-depth look at how the grid comes together.
-        </p>
-    </div>
-    <div class="expand mb_1">
-        <div class="row row_fluid">
-            <div class="gr gr_4 gr_md_12 bg">4</div>
-            <div class="gr gr_4 gr_md_6 bg">4</div>
-            <div class="gr gr_4 gr_md_6 bg">4</div>
-        </div>
-    </div>
-    <div class="expand">
-        <script src="https://gist.github.com/estefanionsantos/dee2bce1e6f90f2697cc6f8d5ec4d3b3.js"></script>
-    </div>
-</div>
+                            <div class="fold bg_gr">
+                                <h1 class="mb_3">Grid flex 2</h1>
+                                <p class="mb_3">if the total is odd, the last block w_100</p>
 
-                        <!-- main end -->
-                    </div>
-                    <div class="gr gr_2 gr_md_12">
-                        <div class="expand mt_3">
-                            <ul class="lt_y lk_prm lk_hv_scn">
-                                <li><a href="../menu">Menu</a></li>
-                                <li><a href="../layout"><span class="tx_info">Layout</span></a></li>
-                                <li><a href="../forms">Form</a></li>
-                                <li><a href="../tables">Table</a></li>
-                            </ul>
+                                <div class="row_flex">
+                                    <div class="gr_flex_2">1</div>
+                                    <div class="gr_flex_2">2</div>
+                                    <div class="gr_flex_2">3</div>
+                                    <div class="gr_flex_2">4</div>
+                                    <div class="gr_flex_2">5</div>
+                                </div>
+
+
+                                <div class="fold accordion">
+                                    <details>
+                                        <summary>View source code</summary>
+                                        <div class="accordion-content">
+                                            <script src="https://gist.github.com/estefanionsantos/c47c5606c683ea3450a6c50fa5c86abf.js"></script>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                            <!-- main end -->
                         </div>
                     </div>
                 </div>
+
+                <footer class="fold">
+                    <div class="container">
+                        <ul class="lt_h fl_r lk_info">
+                            <li>
+                                &copy; 2016 -
+                                <script type="text/javascript">
+                                    var date = new Date();
+                                    document.write(date.getFullYear());
+                                </script>
+                            </li>
+                            <li><a href="./">DobokCSS</a></li>
+                            <li>|</li>
+                            <li><a href="https://github.com/dobokcss/core">GitHub</a></li>
+                            <li>|</li>
+                            <li><a href="https://estefanionsantos.github.io/" title="@estefanionsantos">by: ens</a></li>
+                        </ul>
+                    </div>
+                </footer>
+
             </div>
-
-
-            <footer class="fold">
-                <div class="expand">
-                </div>
-                <div class="expand">
-                    <ul class="lt_x fl_r">
-                        <li>
-                            &copy;
-                            2016 -
-                            <script type="text/javascript">
-                                var date = new Date();
-                                document.write(date.getFullYear());
-                            </script>
-                        </li>
-                        <li><a href="./" class="lk_prm">DobokCSS</a></li>
-                        <li>|</li>
-                        <li><a href="https://github.com/dobokcss/dobokcss" class="lk_prm">GitHub</a></li>
-                        <li>|</li>
-                        <li><a href="./downloads/" class="lk_prm">Downloads</a></li>
-                        <li>|</li>
-                        <li><a href="https://bit.ly/ens-github-io" class="lk_prm" title="@estefanionsantos">by: ens</a></li>
-                    </ul>
-                </div>
-            </footer>
-
         </div>
-
-
 
     </body>
 </html>
